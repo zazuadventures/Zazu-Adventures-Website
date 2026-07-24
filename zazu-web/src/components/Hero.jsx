@@ -1,0 +1,219 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
+
+const slides = [
+  {
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery1.png",
+    eyebrow: "The Smoke That Thunders",
+    title: "Victoria Falls",
+    description:
+      "Witness one of the Seven Natural Wonders of the World through unforgettable tours, luxury stays, scenic flights, and authentic local experiences.",
+    primaryAction: {
+      label: "Explore Victoria Falls",
+      href: "/destinations/victoria-falls",
+    },
+  },
+  {
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/HwangeGallery1.png",
+    eyebrow: "Zimbabwe's Premier Safari Destination",
+    title: "Hwange National Park",
+    description:
+      "Discover Zimbabwe's largest national park, home to vast elephant herds, iconic wildlife, and unforgettable guided safari experiences.",
+    primaryAction: {
+      label: "Explore Hwange",
+      href: "/destinations/hwange-national-park",
+    },
+  },
+  {
+    image: "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery5.png",
+    eyebrow: "Land of Giants",
+    title: "Chobe National Park",
+    description:
+      "Experience Botswana's famous river safaris and encounter one of Africa's largest elephant populations along the Chobe River.",
+    primaryAction: {
+      label: "Explore Chobe",
+      href: "/destinations/chobe-national-park",
+    },
+  },
+  {
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/OkavangoGallery1.png",
+    eyebrow: "Africa's Untamed Oasis",
+    title: "Okavango Delta",
+    description:
+      "Journey through the world's largest inland delta with luxury lodges, mokoro canoe safaris, and exceptional wildlife encounters.",
+    primaryAction: {
+      label: "Explore Okavango Delta",
+      href: "/destinations/okavango-delta",
+    },
+  },
+  {
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/SossusvleiGallery1.png",
+    eyebrow: "The Iconic Red Dunes",
+    title: "Sossusvlei Desert",
+    description:
+      "Explore Namibia's breathtaking desert landscapes, towering red dunes, ancient deadvlei, and spectacular sunrise adventures.",
+    primaryAction: {
+      label: "Explore Sossusvlei",
+      href: "/destinations/sossusvlei",
+    },
+  },
+];
+
+function Hero() {
+  const [current, setCurrent] = useState(0);
+
+  const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
+
+  const prevSlide = () =>
+    setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+
+  useEffect(() => {
+    slides.forEach((slide) => {
+      const img = new Image();
+      img.src = slide.image;
+    });
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % slides.length);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const scrollToContent = () => {
+    const destinationsSection = document.getElementById("destinations");
+
+    if (destinationsSection) {
+      destinationsSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      return;
+    }
+
+    window.scrollTo({
+      top: window.innerHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
+  return (
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        {slides.map((slide, index) => (
+          <motion.img
+            key={slide.image}
+            src={slide.image}
+            alt={slide.title}
+            className="absolute inset-0 h-full w-full object-cover"
+            initial={false}
+            animate={{
+              opacity: current === index ? 1 : 0,
+              scale: current === index ? 1 : 1.05,
+            }}
+            transition={{
+              opacity: {
+                duration: 1.4,
+                ease: "easeInOut",
+              },
+              scale: {
+                duration: 6,
+                ease: "linear",
+              },
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50" />
+
+      {/* Hero Content */}
+      <div className="relative z-20 mx-auto flex w-full max-w-6xl justify-center px-6">
+        <motion.div
+          key={current}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -40 }}
+          transition={{ duration: 0.7 }}
+          className="max-w-4xl text-center text-white"
+        >
+          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/80">
+            {slides[current].eyebrow}
+          </p>
+
+          <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+            {slides[current].title}
+          </h1>
+
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/90 lg:text-lg">
+            {slides[current].description}
+          </p>
+
+          <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Link
+              to={slides[current].primaryAction.href}
+              className="rounded-full border border-white bg-transparent px-8 py-4 font-semibold text-white transition duration-300 hover:bg-white hover:text-[#203A4A]"
+            >
+              {slides[current].primaryAction.label}
+            </Link>
+          </div>
+        </motion.div>
+      </div>
+
+      {/* Bottom Controls */}
+      <div className="absolute bottom-0 left-0 right-0 z-30 border-t border-white/20">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
+          <button
+            type="button"
+            onClick={scrollToContent}
+            aria-label="Scroll down"
+            className="group flex flex-col items-center gap-3"
+          >
+            <div className="flex h-12 w-8 justify-center rounded-full border-2 border-white/40">
+              <motion.div
+                animate={{ y: [0, 16, 0] }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 1.8,
+                  ease: "easeInOut",
+                }}
+                className="mt-2 h-2 w-2 rounded-full bg-white"
+              />
+            </div>
+
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-white/80 transition group-hover:text-white">
+              Scroll
+            </span>
+          </button>
+
+          {/* Previous / Next */}
+          <div className="flex items-center gap-4">
+            <button
+              onClick={prevSlide}
+              className="flex h-12 w-12 items-center justify-center   text-white  transition hover:bg-white/80 rounded-full hover:text-black"
+            >
+              <ChevronLeft size={22} />
+            </button>
+
+            <button
+              onClick={nextSlide}
+              className="flex h-12 w-12 items-center justify-center   text-white  transition hover:bg-white/80 rounded-full  hover:text-black"
+            >
+              <ChevronRight size={22} />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Hero;
