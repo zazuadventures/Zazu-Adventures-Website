@@ -200,9 +200,7 @@ export const dayTours = [
 
     image: "https://zazuadventures.com/wp-content/uploads/2026/07/dsc6710.jpg",
 
-    gallery: [
-      ""
-    ],
+    gallery: [""],
 
     priceFrom: 80,
 
@@ -246,110 +244,186 @@ export const dayTours = [
 
 export const multiDayTours = [
   {
-    id: "hwange-safari",
-    slug: "hwange-national-park-safari",
-    destinationIds: ["hwange-national-park"],
-    title: "Hwange National Park Safari",
+    id: "victoria-falls-chobe",
+    slug: "victoria-falls-chobe",
+    destinationIds: ["victoria-falls", "chobe-national-park", "zambezi-river"],
+    title: "Victoria Falls, Chobe",
     image: "https://zazuadventures.com/wp-content/uploads/2026/07/hwange.jpeg",
+    gallery: [""],
     priceFrom: 420,
     duration: "3 Days",
-    location: "Hwange",
+    location: "Victoria Falls & Chobe",
     category: "Multi-Day Tour",
     type: "multi-day",
     summary:
-      "A classic safari escape with elephants, predators, and expansive game-drive country.",
+      "Experience the best of Zimbabwe and Botswana with a 3-day adventure combining the spectacular Victoria Falls, a relaxing Zambezi River sunset cruise, and an unforgettable Chobe National Park safari.",
+
     highlights: [
-      "Big game viewing",
-      "Luxury lodge stays",
-      "Longer safari time",
+      "Guided Victoria Falls tour",
+      "Chobe National Park game drive",
+      "Chobe River boat cruise",
+      "Zambezi River sunset cruise",
+      "Cross-border safari experience",
     ],
-    includes: ["Accommodation planning", "Game drives", "Safari coordination"],
+
+    includes: [
+      "Return transfers",
+      "Guided Victoria Falls tour",
+      "Chobe game drive",
+      "Chobe River boat cruise",
+      "Professional guides",
+    ],
+
     itinerary: [
-      "Day 1: Transfer to Hwange and settle into camp.",
-      "Day 2: Full-day game drives and wildlife viewing.",
-      "Day 3: Sunrise safari and return transfer.",
+      "Day 1: Arrival in Victoria Falls, guided tour of the Falls, followed by a relaxing sunset cruise on the Zambezi River.",
+      "Day 2: Full-day Chobe National Park safari in Botswana, including a morning game drive, buffet lunch, and an afternoon Chobe River boat cruise.",
+      "Day 3: Leisure morning in Victoria Falls before departure transfer.",
     ],
   },
   {
-    id: "victoria-falls-hwange-combo",
-    slug: "victoria-falls-and-hwange-combo",
-    destinationIds: ["victoria-falls", "hwange-national-park"],
-    title: "Victoria Falls and Hwange Combo",
+    id: "hwange-victoria-falls-chobe-nata",
+    slug: "hwange-national-park-victoria-falls-chobe-nata",
+    destinationIds: [
+      "hwange-national-park",
+      "victoria-falls",
+      "chobe-national-park",
+      "nata",
+    ],
+    title: "Hwange National Park, Victoria Falls, Chobe and Nata",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery2.png",
+      "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery4.png",
+      gallery: [
+        ""
+      ],
     priceFrom: 690,
     duration: "4 Days",
-    location: "Victoria Falls + Hwange",
+    location: "Hwange • Victoria Falls • Chobe • Nata",
     category: "Multi-Day Tour",
     type: "multi-day",
     summary:
-      "Combine the drama of Victoria Falls with the wildlife density of Hwange in one trip.",
+      "Embark on an unforgettable four-day journey through Zimbabwe and Botswana, combining the wildlife of Hwange National Park, the natural wonder of Victoria Falls, the famous Chobe National Park, and the scenic landscapes of Nata.",
+
     highlights: [
-      "Falls viewpoints",
-      "Safari game drives",
-      "Efficient two-stop itinerary",
+      "Hwange National Park game drive",
+      "Guided Victoria Falls tour",
+      "Chobe National Park safari",
+      "Chobe River boat cruise",
+      "Visit to Nata",
+      "Cross-border wildlife adventure",
     ],
-    includes: ["Transfers", "Planning support", "Accommodation coordination"],
+
+    includes: [
+      "Return transfers",
+      "Guided Victoria Falls tour",
+      "Hwange game drive",
+      "Chobe game drive",
+      "Chobe River boat cruise",
+      "Accommodation",
+      "Professional guides",
+    ],
+
     itinerary: [
-      "Day 1: Victoria Falls arrival and evening activity.",
-      "Day 2: Falls tour and optional cruise or flight.",
-      "Day 3: Transfer to Hwange with afternoon safari.",
-      "Day 4: Morning game drive and departure.",
+      "Day 1: Arrival in Victoria Falls and transfer to Hwange National Park for an afternoon game drive and overnight stay.",
+      "Day 2: Morning safari in Hwange before returning to Victoria Falls for a guided tour of the Falls and overnight stay.",
+      "Day 3: Cross into Botswana for a full-day Chobe National Park experience, including a game drive, river cruise, and continue to Nata for an overnight stay.",
+      "Day 4: Enjoy breakfast in Nata before your departure or onward transfer.",
     ],
   },
   {
-    id: "okavango-expedition",
-    slug: "okavango-delta-expedition",
-    destinationIds: ["okavango-delta"],
-    title: "Okavango Delta Expedition",
+    id: "hwange-victoria-falls-chobe-okavango",
+    slug: "hwange-national-park-victoria-falls-chobe-okavango-delta",
+    destinationIds: [
+      "hwange-national-park",
+      "victoria-falls",
+      "chobe-national-park",
+      "okavango-delta",
+    ],
+    title: "Hwange National Park, Victoria Falls, Chobe and Okavango Delta",
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/07/okavango-scaled.jpg",
     priceFrom: 1350,
     duration: "6 Days",
-    location: "Botswana",
+    location: "Zimbabwe & Botswana",
     category: "Multi-Day Tour",
     type: "multi-day",
     summary:
-      "A remote wilderness journey with mokoro rides, water channels, and premium camp stays.",
-    highlights: ["Mokoro rides", "Water safaris", "Remote camps"],
-    includes: ["Camp planning", "Safari transfers", "Itinerary support"],
+      "Experience the ultimate Southern African safari, combining the wildlife-rich Hwange National Park, the magnificent Victoria Falls, the famous Chobe National Park, and the breathtaking waterways of the Okavango Delta.",
+
+    highlights: [
+      "Hwange National Park game drives",
+      "Guided Victoria Falls tour",
+      "Chobe National Park safari",
+      "Chobe River boat cruise",
+      "Okavango Delta mokoro excursion",
+      "Cross-border wildlife adventure",
+    ],
+
+    includes: [
+      "Accommodation",
+      "Return transfers",
+      "Guided Victoria Falls tour",
+      "Hwange game drives",
+      "Chobe game drive",
+      "Chobe River boat cruise",
+      "Okavango Delta mokoro excursion",
+      "Professional guides",
+    ],
+
     itinerary: [
-      "Day 1: Arrival and transfer into the delta region.",
-      "Days 2-4: Water activities, game viewing, and camp time.",
-      "Day 5: Optional scenic activity or second camp.",
-      "Day 6: Return journey and departure.",
+      "Day 1: Arrival in Victoria Falls and transfer to Hwange National Park for an afternoon game drive and overnight stay.",
+      "Day 2: Morning safari in Hwange before returning to Victoria Falls for a guided tour of the Falls and overnight stay.",
+      "Day 3: Cross into Botswana for a full-day Chobe National Park safari, including a game drive, river cruise, and overnight stay.",
+      "Day 4: Transfer to the Okavango Delta and enjoy an afternoon mokoro excursion through the pristine waterways.",
+      "Day 5: Full-day Okavango Delta safari with guided bush walks, wildlife viewing, and optional boat activities.",
+      "Day 6: Breakfast followed by your departure transfer.",
     ],
   },
   {
-    id: "zambezi-hwange-escape",
-    slug: "zambezi-and-hwange-wilderness-escape",
-    destinationIds: ["victoria-falls", "hwange-national-park", "zambezi-river"],
-    title: "Zambezi and Hwange Wilderness Escape",
+    id: "cape-town-kruger-vic-falls-chobe",
+    slug: "cape-town-kruger-vic-falls-chobe",
+    destinationIds: [
+      "cape-town",
+      "kruger-national-park",
+      "victoria-falls",
+      "chobe-national-park",
+    ],
+    title: "Cape Town, Kruger, Vic Falls and Chobe",
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/07/HwangeGallery3.png",
     priceFrom: 825,
     duration: "5 Days",
-    location: "Victoria Falls + Hwange",
+    location: "South Africa, Zimbabwe & Botswana",
     category: "Multi-Day Tour",
     type: "multi-day",
     summary:
-      "A balanced safari and river itinerary blending Victoria Falls, wildlife viewing, and relaxed Zambezi moments.",
+      "Experience the best of Southern Africa with an unforgettable journey through Cape Town, Kruger National Park, Victoria Falls, and Chobe National Park, combining vibrant city life, world-class safaris, and iconic natural wonders.",
+
     highlights: [
-      "Victoria Falls introduction",
-      "Hwange safari experience",
-      "Zambezi river activity",
+      "Explore Cape Town",
+      "Kruger National Park safari",
+      "Guided Victoria Falls tour",
+      "Chobe National Park game drive",
+      "Chobe River boat cruise",
+      "Three-country adventure",
     ],
+
     includes: [
-      "Itinerary planning",
-      "Transfer coordination",
-      "Safari and cruise assistance",
+      "Accommodation",
+      "Airport and road transfers",
+      "Guided Cape Town sightseeing",
+      "Kruger National Park game drive",
+      "Guided Victoria Falls tour",
+      "Chobe game drive",
+      "Chobe River boat cruise",
+      "Professional guides",
     ],
+
     itinerary: [
-      "Day 1: Arrive in Victoria Falls and settle into your accommodation.",
-      "Day 2: Guided Victoria Falls experience and sunset river activity.",
-      "Day 3: Transfer to Hwange for an afternoon safari drive.",
-      "Day 4: Full-day wildlife viewing in Hwange National Park.",
-      "Day 5: Return transfer with optional final Zambezi stop.",
+      "Day 1: Arrive in Cape Town and enjoy a guided city tour, including Table Mountain (weather permitting) and the V&A Waterfront.",
+      "Day 2: Fly to Kruger National Park for an afternoon game drive and overnight stay.",
+      "Day 3: Morning safari in Kruger before flying to Victoria Falls for an evening at leisure.",
+      "Day 4: Guided tour of Victoria Falls followed by a full-day excursion to Chobe National Park, including a game drive, buffet lunch, and Chobe River boat cruise.",
+      "Day 5: Leisure morning before your airport transfer for departure.",
     ],
   },
 ];
@@ -363,104 +437,142 @@ export const packages = [
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/05/IMG-20250623-WA0029.jpg",
     priceFrom: 120,
-    duration: "1 Day",
+    duration: "Full Day",
     location: "Victoria Falls",
     category: "Package",
     type: "package",
     summary:
-      "A simple all-in-one package combining viewpoints, lunch, and a river sunset.",
+      "Discover the majestic Victoria Falls on a guided tour, enjoy a delicious lunch at a local restaurant, and end your day with a relaxing sunset cruise on the Zambezi River.",
+
     highlights: [
-      "Great first-timer package",
-      "Lunch included",
-      "Sunset on the river",
+      "Guided tour of Victoria Falls",
+      "Lunch at a selected local restaurant",
+      "Sunset cruise on the Zambezi River",
+      "Wildlife and bird viewing",
+      "Complimentary snacks and drinks on the cruise",
     ],
+
     includes: [
-      "Guided tour",
-      "Lunch arrangement",
-      "Sunset cruise coordination",
+      "Guided Victoria Falls tour",
+      "Lunch",
+      "Sunset cruise",
+      "Return hotel transfers",
+      "Professional guide",
     ],
+
     itinerary: [
-      "Start with the guided falls tour.",
-      "Pause for lunch at a curated venue.",
-      "End the day with a sunset cruise.",
+      "Morning: Pick-up from your accommodation and enjoy a guided tour of the magnificent Victoria Falls, visiting the best viewpoints.",
+      "Afternoon: Relax with lunch at a carefully selected local restaurant.",
+      "Late Afternoon: Board a luxury sunset cruise on the Zambezi River with snacks, drinks, and opportunities to spot wildlife while watching the African sunset.",
+      "Evening: Return transfer to your accommodation.",
     ],
   },
   {
-    id: "falls-safari-package",
-    slug: "falls-safari-and-cruise-package",
-    destinationIds: ["victoria-falls", "hwange-national-park", "zambezi-river"],
-    title: "Falls, Safari and Cruise Package",
+    id: "",
+    slug: "am-bamba-tram-falls-tour-boma",
+    destinationIds: ["victoria-falls"],
+    title: "AM Bamba Tram, Falls Tour and Boma",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery3.png",
+      "https://zazuadventures.com/wp-content/uploads/2026/07/Bamba-Tram_2.jpg",
     priceFrom: 260,
-    duration: "2 Days",
+    duration: "Full Day",
     location: "Victoria Falls",
     category: "Package",
     type: "package",
     summary:
-      "A balanced short break with iconic viewpoints, wildlife, and a river experience.",
-    highlights: ["Viewpoints", "Safari add-on", "Cruise included"],
-    includes: [
-      "Trip coordination",
-      "Transfer planning",
-      "Activity booking support",
-    ],
-    itinerary: [
-      "Day 1: Victoria Falls guided experience and lunch.",
-      "Day 2: Safari add-on followed by a sunset cruise.",
-    ],
-  },
-  {
-    id: "botswana-zimbabwe-highlights",
-    slug: "botswana-and-zimbabwe-highlights-package",
-    destinationIds: ["victoria-falls", "chobe-national-park", "okavango-delta"],
-    title: "Botswana and Zimbabwe Highlights Package",
-    image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery1.png",
-    priceFrom: 1350,
-    duration: "6 Days",
-    location: "Zimbabwe + Botswana",
-    category: "Package",
-    type: "package",
-    summary:
-      "A polished cross-border itinerary with waterfalls, safari, and signature river moments.",
-    highlights: ["Two countries", "Premium add-ons", "All-in-one package"],
-    includes: ["Itinerary planning", "Transfers", "Activity booking support"],
-    itinerary: [
-      "Days 1-2: Victoria Falls experiences.",
-      "Days 3-4: Safari and river activities.",
-      "Days 5-6: Optional Botswana extension and departure.",
-    ],
-  },
-  {
-    id: "victoria-falls-chobe-package",
-    slug: "victoria-falls-and-chobe-package",
-    destinationIds: ["victoria-falls", "chobe-national-park", "zambezi-river"],
-    title: "Victoria Falls and Chobe Package",
-    image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery5.png",
-    priceFrom: 980,
-    duration: "4 Days",
-    location: "Victoria Falls + Chobe",
-    category: "Package",
-    type: "package",
-    summary:
-      "A cross-border package that combines Victoria Falls, river scenery, and Chobe's famous elephant viewing.",
+      "Experience the charm of the Bamba Tram, discover the breathtaking Victoria Falls on a guided tour, and end your day with the famous Boma Dinner and Drum Show for an unforgettable cultural evening.",
+
     highlights: [
-      "Two-country itinerary",
-      "River and safari combination",
-      "Great top-selling package",
+      "Scenic Bamba Tram experience",
+      "Guided Victoria Falls tour",
+      "The Boma Dinner & Drum Show",
     ],
+
     includes: [
-      "Trip coordination",
-      "Transfer planning",
-      "Activity booking support",
+      "Bamba Tram ride",
+      "Guided Victoria Falls tour",
+      "The Boma Dinner and Drum Show",
+      "Return hotel transfers",
+      "Professional guide",
     ],
+
     itinerary: [
-      "Day 1: Victoria Falls arrival and guided tour.",
-      "Day 2: Zambezi cruise or scenic flight add-on.",
-      "Day 3: Transfer to Chobe for riverfront safari time.",
-      "Day 4: Morning game viewing and departure support.",
+      "Morning: Pick-up from your accommodation and enjoy a scenic ride on the Bamba Tram.",
+      "Late Morning: Explore the magnificent Victoria Falls on a guided tour, visiting the best viewpoints and learning about its history and geology.",
+      "Evening: Transfer to The Boma Restaurant for a traditional African dinner, drumming, cultural performances, and entertainment before returning to your accommodation.",
+    ],
+  },
+  {
+    id: "",
+    slug: "am",
+    destinationIds: "victoria-falls",
+    title: "AM Safari Drive, Helicopter Flight and Boma Dinner",
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/Game-Drives.jpg",
+    priceFrom: 260,
+    duration: "Full Day",
+    location: "Victoria Falls",
+    category: "Package",
+    type: "package",
+    summary:
+      "Experience an exciting morning safari drive, enjoy breathtaking aerial views of Victoria Falls on a helicopter flight, and end your day with the famous Boma Dinner and Drum Show.",
+
+    highlights: [
+      "Morning game drive",
+      "Helicopter flight over Victoria Falls",
+      "The Boma Dinner & Drum Show",
+    ],
+
+    includes: [
+      "Morning safari drive",
+      "Helicopter flight",
+      "The Boma Dinner and Drum Show",
+      "Return transfers",
+      "Professional guides",
+    ],
+
+    itinerary: [
+      "Morning: Pick-up from your accommodation and depart for a guided safari drive in Zambezi National Park.",
+      "Midday: Enjoy the iconic Helicopter Flight over Victoria Falls for spectacular aerial views.",
+      "Evening: Transfer to The Boma Restaurant for dinner, traditional entertainment, drumming, and cultural performances before returning to your accommodation.",
+    ],
+  },
+  {
+    id: "lion-elephant-walk-helicopter-sunset-cruise",
+    slug: "lion-elephant-walk-helicopter-sunset-cruise",
+    destinationIds: ["victoria-falls", "zambezi-river"],
+    title: "Lion/Elephant Walk, Helicopter Flight and Sunset Cruise",
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/05/583051098_829236743146707_772401892647147049_n.jpg",
+    priceFrom: 980,
+    duration: "Full Day",
+    location: "Victoria Falls",
+    category: "Package",
+    type: "package",
+    summary:
+      "Enjoy an unforgettable day in Victoria Falls featuring a close-up lion or elephant encounter, a spectacular helicopter flight over the Falls, and a relaxing sunset cruise on the Zambezi River.",
+
+    highlights: [
+      "Lion or Elephant Walk experience",
+      "Helicopter Flight over Victoria Falls",
+      "Zambezi River Sunset Cruise",
+      "Wildlife encounters",
+      "Scenic aerial views of the Falls",
+    ],
+
+    includes: [
+      "Lion or Elephant Walk",
+      "Helicopter Flight",
+      "Sunset Cruise",
+      "Return hotel transfers",
+      "Professional guides",
+    ],
+
+    itinerary: [
+      "Morning: Pick-up from your accommodation for a memorable Lion or Elephant Walk experience.",
+      "Midday: Take to the skies on the iconic Helicopter Flight over Victoria Falls for breathtaking panoramic views.",
+      "Late Afternoon: Board a luxury sunset cruise on the Zambezi River with complimentary snacks and drinks while watching wildlife and the African sunset.",
+      "Evening: Return transfer to your accommodation.",
     ],
   },
 ];
