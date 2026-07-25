@@ -33,6 +33,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:19.2.17"],\
           ["@types/react-dom", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:19.2.3"],\
           ["@vitejs/plugin-react", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:6.0.4"],\
+          ["contentful", "npm:11.12.7"],\
           ["framer-motion", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:12.42.2"],\
           ["lucide-react", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:1.26.0"],\
           ["oxlint", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:1.75.0"],\
@@ -46,6 +47,26 @@ const RAW_RUNTIME_STATE =
           ["zazu-web", "workspace:."]\
         ],\
         "linkType": "SOFT"\
+      }]\
+    ]],\
+    ["@contentful/content-source-maps", [\
+      ["npm:0.11.44", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@contentful-content-source-maps-npm-0.11.44-db689db6f7-10c0.zip/node_modules/@contentful/content-source-maps/",\
+        "packageDependencies": [\
+          ["@contentful/content-source-maps", "npm:0.11.44"],\
+          ["@vercel/stega", "npm:0.1.2"],\
+          ["json-pointer", "npm:0.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@contentful/rich-text-types", [\
+      ["npm:17.2.7", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@contentful-rich-text-types-npm-17.2.7-e50a62b1d3-10c0.zip/node_modules/@contentful/rich-text-types/",\
+        "packageDependencies": [\
+          ["@contentful/rich-text-types", "npm:17.2.7"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["@emnapi/core", [\
@@ -548,6 +569,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@rollup/rollup-linux-x64-gnu", [\
+      ["npm:4.62.2", {\
+        "packageLocation": "./.yarn/unplugged/@rollup-rollup-linux-x64-gnu-npm-4.62.2-1774ccb0dc/node_modules/@rollup/rollup-linux-x64-gnu/",\
+        "packageDependencies": [\
+          ["@rollup/rollup-linux-x64-gnu", "npm:4.62.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@tailwindcss/node", [\
       ["npm:4.3.3", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@tailwindcss-node-npm-4.3.3-29f2815288-10c0.zip/node_modules/@tailwindcss/node/",\
@@ -764,6 +794,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@vercel/stega", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@vercel-stega-npm-0.1.2-89d91cfc39-10c0.zip/node_modules/@vercel/stega/",\
+        "packageDependencies": [\
+          ["@vercel/stega", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@vitejs/plugin-react", [\
       ["npm:6.0.4", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/@vitejs-plugin-react-npm-6.0.4-42953330b3-10c0.zip/node_modules/@vitejs/plugin-react/",\
@@ -804,11 +843,134 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["agent-base", [\
+      ["npm:6.0.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/agent-base-npm-6.0.2-428f325a93-10c0.zip/node_modules/agent-base/",\
+        "packageDependencies": [\
+          ["agent-base", "npm:6.0.2"],\
+          ["debug", "virtual:428f325a939c2653ad822eb3d75efb02ac311523dd0d4f9645afc39ea00bd86eceac35a9d59c9b6977d76b670a4ef0ae057ea572338a44729aa592711a8c05a3#npm:4.4.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["async-function", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/async-function-npm-1.0.0-a81667ebcd-10c0.zip/node_modules/async-function/",\
+        "packageDependencies": [\
+          ["async-function", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["async-generator-function", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/async-generator-function-npm-1.0.0-14cf981d13-10c0.zip/node_modules/async-generator-function/",\
+        "packageDependencies": [\
+          ["async-generator-function", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["asynckit", [\
+      ["npm:0.4.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/asynckit-npm-0.4.0-c718858525-10c0.zip/node_modules/asynckit/",\
+        "packageDependencies": [\
+          ["asynckit", "npm:0.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["axios", [\
+      ["npm:1.18.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/axios-npm-1.18.1-cfe396e04f-10c0.zip/node_modules/axios/",\
+        "packageDependencies": [\
+          ["axios", "npm:1.18.1"],\
+          ["follow-redirects", "virtual:cfe396e04f9d811fe025e61204c45b20fa95aeeb72f863d9cf0f07aec679067f9a0d2fe39eb3c317aeb8b92b549644483d65f5e97851fa03255f800f31d04eff#npm:1.16.0"],\
+          ["form-data", "npm:4.0.6"],\
+          ["https-proxy-agent", "npm:5.0.1"],\
+          ["proxy-from-env", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["call-bind-apply-helpers", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/call-bind-apply-helpers-npm-1.0.2-3eedbea3bb-10c0.zip/node_modules/call-bind-apply-helpers/",\
+        "packageDependencies": [\
+          ["call-bind-apply-helpers", "npm:1.0.2"],\
+          ["es-errors", "npm:1.3.0"],\
+          ["function-bind", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["call-bound", [\
+      ["npm:1.0.4", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/call-bound-npm-1.0.4-359cfa32c7-10c0.zip/node_modules/call-bound/",\
+        "packageDependencies": [\
+          ["call-bind-apply-helpers", "npm:1.0.2"],\
+          ["call-bound", "npm:1.0.4"],\
+          ["get-intrinsic", "npm:1.3.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["chownr", [\
       ["npm:3.0.0", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/chownr-npm-3.0.0-5275e85d25-10c0.zip/node_modules/chownr/",\
         "packageDependencies": [\
           ["chownr", "npm:3.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["combined-stream", [\
+      ["npm:1.0.8", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/combined-stream-npm-1.0.8-dc14d4a63a-10c0.zip/node_modules/combined-stream/",\
+        "packageDependencies": [\
+          ["combined-stream", "npm:1.0.8"],\
+          ["delayed-stream", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["contentful", [\
+      ["npm:11.12.7", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/contentful-npm-11.12.7-9cb11d565c-10c0.zip/node_modules/contentful/",\
+        "packageDependencies": [\
+          ["@contentful/content-source-maps", "npm:0.11.44"],\
+          ["@contentful/rich-text-types", "npm:17.2.7"],\
+          ["axios", "npm:1.18.1"],\
+          ["contentful", "npm:11.12.7"],\
+          ["contentful-resolve-response", "npm:1.9.9"],\
+          ["contentful-sdk-core", "npm:9.4.5"],\
+          ["json-stringify-safe", "npm:5.0.1"],\
+          ["tslib", "npm:2.8.1"],\
+          ["type-fest", "npm:4.41.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["contentful-resolve-response", [\
+      ["npm:1.9.9", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/contentful-resolve-response-npm-1.9.9-07857b6cea-10c0.zip/node_modules/contentful-resolve-response/",\
+        "packageDependencies": [\
+          ["contentful-resolve-response", "npm:1.9.9"],\
+          ["fast-copy", "npm:3.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["contentful-sdk-core", [\
+      ["npm:9.4.5", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/contentful-sdk-core-npm-9.4.5-8c892b5bb9-10c0.zip/node_modules/contentful-sdk-core/",\
+        "packageDependencies": [\
+          ["@rollup/rollup-linux-x64-gnu", "npm:4.62.2"],\
+          ["contentful-sdk-core", "npm:9.4.5"],\
+          ["fast-copy", "npm:3.0.2"],\
+          ["lodash", "npm:4.18.1"],\
+          ["process", "npm:0.11.10"],\
+          ["qs", "npm:6.15.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -831,11 +993,55 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["debug", [\
+      ["npm:4.4.3", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/debug-npm-4.4.3-0105c6123a-10c0.zip/node_modules/debug/",\
+        "packageDependencies": [\
+          ["debug", "npm:4.4.3"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:428f325a939c2653ad822eb3d75efb02ac311523dd0d4f9645afc39ea00bd86eceac35a9d59c9b6977d76b670a4ef0ae057ea572338a44729aa592711a8c05a3#npm:4.4.3", {\
+        "packageLocation": "./.yarn/__virtual__/debug-virtual-f1d35ffda4/5/AppData/Local/Yarn/Berry/cache/debug-npm-4.4.3-0105c6123a-10c0.zip/node_modules/debug/",\
+        "packageDependencies": [\
+          ["@types/supports-color", null],\
+          ["debug", "virtual:428f325a939c2653ad822eb3d75efb02ac311523dd0d4f9645afc39ea00bd86eceac35a9d59c9b6977d76b670a4ef0ae057ea572338a44729aa592711a8c05a3#npm:4.4.3"],\
+          ["ms", "npm:2.1.3"],\
+          ["supports-color", null]\
+        ],\
+        "packagePeers": [\
+          "@types/supports-color",\
+          "supports-color"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["delayed-stream", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/delayed-stream-npm-1.0.0-c5a4c4cc02-10c0.zip/node_modules/delayed-stream/",\
+        "packageDependencies": [\
+          ["delayed-stream", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["detect-libc", [\
       ["npm:2.1.2", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/detect-libc-npm-2.1.2-d0c382b1e2-10c0.zip/node_modules/detect-libc/",\
         "packageDependencies": [\
           ["detect-libc", "npm:2.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["dunder-proto", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/dunder-proto-npm-1.0.1-90eb6829db-10c0.zip/node_modules/dunder-proto/",\
+        "packageDependencies": [\
+          ["call-bind-apply-helpers", "npm:1.0.2"],\
+          ["dunder-proto", "npm:1.0.1"],\
+          ["es-errors", "npm:1.3.0"],\
+          ["gopd", "npm:1.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -860,11 +1066,61 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["es-define-property", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/es-define-property-npm-1.0.1-3fc6324f1c-10c0.zip/node_modules/es-define-property/",\
+        "packageDependencies": [\
+          ["es-define-property", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["es-errors", [\
+      ["npm:1.3.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/es-errors-npm-1.3.0-fda0c9b8a8-10c0.zip/node_modules/es-errors/",\
+        "packageDependencies": [\
+          ["es-errors", "npm:1.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["es-object-atoms", [\
+      ["npm:1.1.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/es-object-atoms-npm-1.1.2-97972d8992-10c0.zip/node_modules/es-object-atoms/",\
+        "packageDependencies": [\
+          ["es-errors", "npm:1.3.0"],\
+          ["es-object-atoms", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["es-set-tostringtag", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/es-set-tostringtag-npm-2.1.0-4e55705d3f-10c0.zip/node_modules/es-set-tostringtag/",\
+        "packageDependencies": [\
+          ["es-errors", "npm:1.3.0"],\
+          ["es-set-tostringtag", "npm:2.1.0"],\
+          ["get-intrinsic", "npm:1.3.1"],\
+          ["has-tostringtag", "npm:1.0.2"],\
+          ["hasown", "npm:2.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["exponential-backoff", [\
       ["npm:3.1.3", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/exponential-backoff-npm-3.1.3-28be78d98e-10c0.zip/node_modules/exponential-backoff/",\
         "packageDependencies": [\
           ["exponential-backoff", "npm:3.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fast-copy", [\
+      ["npm:3.0.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/fast-copy-npm-3.0.2-d747bd131f-10c0.zip/node_modules/fast-copy/",\
+        "packageDependencies": [\
+          ["fast-copy", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -887,6 +1143,51 @@ const RAW_RUNTIME_STATE =
         "packagePeers": [\
           "@types/picomatch",\
           "picomatch"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["follow-redirects", [\
+      ["npm:1.16.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/follow-redirects-npm-1.16.0-816e4f62d9-10c0.zip/node_modules/follow-redirects/",\
+        "packageDependencies": [\
+          ["follow-redirects", "npm:1.16.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:cfe396e04f9d811fe025e61204c45b20fa95aeeb72f863d9cf0f07aec679067f9a0d2fe39eb3c317aeb8b92b549644483d65f5e97851fa03255f800f31d04eff#npm:1.16.0", {\
+        "packageLocation": "./.yarn/__virtual__/follow-redirects-virtual-5a01cb4fdb/5/AppData/Local/Yarn/Berry/cache/follow-redirects-npm-1.16.0-816e4f62d9-10c0.zip/node_modules/follow-redirects/",\
+        "packageDependencies": [\
+          ["@types/debug", null],\
+          ["debug", null],\
+          ["follow-redirects", "virtual:cfe396e04f9d811fe025e61204c45b20fa95aeeb72f863d9cf0f07aec679067f9a0d2fe39eb3c317aeb8b92b549644483d65f5e97851fa03255f800f31d04eff#npm:1.16.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/debug",\
+          "debug"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["foreach", [\
+      ["npm:2.0.6", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/foreach-npm-2.0.6-32ea85c4a8-10c0.zip/node_modules/foreach/",\
+        "packageDependencies": [\
+          ["foreach", "npm:2.0.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["form-data", [\
+      ["npm:4.0.6", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/form-data-npm-4.0.6-fb3ea14cf3-10c0.zip/node_modules/form-data/",\
+        "packageDependencies": [\
+          ["asynckit", "npm:0.4.0"],\
+          ["combined-stream", "npm:1.0.8"],\
+          ["es-set-tostringtag", "npm:2.1.0"],\
+          ["form-data", "npm:4.0.6"],\
+          ["hasown", "npm:2.0.4"],\
+          ["mime-types", "npm:2.1.35"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -934,11 +1235,111 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["function-bind", [\
+      ["npm:1.1.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/function-bind-npm-1.1.2-7a55be9b03-10c0.zip/node_modules/function-bind/",\
+        "packageDependencies": [\
+          ["function-bind", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["generator-function", [\
+      ["npm:2.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/generator-function-npm-2.0.1-aed34a724a-10c0.zip/node_modules/generator-function/",\
+        "packageDependencies": [\
+          ["generator-function", "npm:2.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["get-intrinsic", [\
+      ["npm:1.3.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/get-intrinsic-npm-1.3.1-2f734f40ec-10c0.zip/node_modules/get-intrinsic/",\
+        "packageDependencies": [\
+          ["async-function", "npm:1.0.0"],\
+          ["async-generator-function", "npm:1.0.0"],\
+          ["call-bind-apply-helpers", "npm:1.0.2"],\
+          ["es-define-property", "npm:1.0.1"],\
+          ["es-errors", "npm:1.3.0"],\
+          ["es-object-atoms", "npm:1.1.2"],\
+          ["function-bind", "npm:1.1.2"],\
+          ["generator-function", "npm:2.0.1"],\
+          ["get-intrinsic", "npm:1.3.1"],\
+          ["get-proto", "npm:1.0.1"],\
+          ["gopd", "npm:1.2.0"],\
+          ["has-symbols", "npm:1.1.0"],\
+          ["hasown", "npm:2.0.4"],\
+          ["math-intrinsics", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["get-proto", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/get-proto-npm-1.0.1-4d30bac614-10c0.zip/node_modules/get-proto/",\
+        "packageDependencies": [\
+          ["dunder-proto", "npm:1.0.1"],\
+          ["es-object-atoms", "npm:1.1.2"],\
+          ["get-proto", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["gopd", [\
+      ["npm:1.2.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/gopd-npm-1.2.0-df89ffa78e-10c0.zip/node_modules/gopd/",\
+        "packageDependencies": [\
+          ["gopd", "npm:1.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["graceful-fs", [\
       ["npm:4.2.11", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/graceful-fs-npm-4.2.11-24bb648a68-10c0.zip/node_modules/graceful-fs/",\
         "packageDependencies": [\
           ["graceful-fs", "npm:4.2.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["has-symbols", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/has-symbols-npm-1.1.0-9aa7dc2ac1-10c0.zip/node_modules/has-symbols/",\
+        "packageDependencies": [\
+          ["has-symbols", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["has-tostringtag", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/has-tostringtag-npm-1.0.2-74a4800369-10c0.zip/node_modules/has-tostringtag/",\
+        "packageDependencies": [\
+          ["has-symbols", "npm:1.1.0"],\
+          ["has-tostringtag", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["hasown", [\
+      ["npm:2.0.4", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/hasown-npm-2.0.4-75e16c9c2a-10c0.zip/node_modules/hasown/",\
+        "packageDependencies": [\
+          ["function-bind", "npm:1.1.2"],\
+          ["hasown", "npm:2.0.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["https-proxy-agent", [\
+      ["npm:5.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/https-proxy-agent-npm-5.0.1-42d65f358e-10c0.zip/node_modules/https-proxy-agent/",\
+        "packageDependencies": [\
+          ["agent-base", "npm:6.0.2"],\
+          ["debug", "virtual:428f325a939c2653ad822eb3d75efb02ac311523dd0d4f9645afc39ea00bd86eceac35a9d59c9b6977d76b670a4ef0ae057ea572338a44729aa592711a8c05a3#npm:4.4.3"],\
+          ["https-proxy-agent", "npm:5.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -976,6 +1377,25 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/js-tokens-npm-4.0.0-0ac852e9e2-10c0.zip/node_modules/js-tokens/",\
         "packageDependencies": [\
           ["js-tokens", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["json-pointer", [\
+      ["npm:0.6.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/json-pointer-npm-0.6.2-fcbbae419b-10c0.zip/node_modules/json-pointer/",\
+        "packageDependencies": [\
+          ["foreach", "npm:2.0.6"],\
+          ["json-pointer", "npm:0.6.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["json-stringify-safe", [\
+      ["npm:5.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/json-stringify-safe-npm-5.0.1-064ddd6ab4-10c0.zip/node_modules/json-stringify-safe/",\
+        "packageDependencies": [\
+          ["json-stringify-safe", "npm:5.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1196,6 +1616,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["lodash", [\
+      ["npm:4.18.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/lodash-npm-4.18.1-a64c3070ac-10c0.zip/node_modules/lodash/",\
+        "packageDependencies": [\
+          ["lodash", "npm:4.18.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["loose-envify", [\
       ["npm:1.4.0", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/loose-envify-npm-1.4.0-6307b72ccf-10c0.zip/node_modules/loose-envify/",\
@@ -1238,6 +1667,34 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["math-intrinsics", [\
+      ["npm:1.1.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/math-intrinsics-npm-1.1.0-9204d80e7d-10c0.zip/node_modules/math-intrinsics/",\
+        "packageDependencies": [\
+          ["math-intrinsics", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mime-db", [\
+      ["npm:1.52.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/mime-db-npm-1.52.0-b5371d6fd2-10c0.zip/node_modules/mime-db/",\
+        "packageDependencies": [\
+          ["mime-db", "npm:1.52.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["mime-types", [\
+      ["npm:2.1.35", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/mime-types-npm-2.1.35-dd9ea9f3e2-10c0.zip/node_modules/mime-types/",\
+        "packageDependencies": [\
+          ["mime-db", "npm:1.52.0"],\
+          ["mime-types", "npm:2.1.35"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["minipass", [\
       ["npm:7.1.3", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/minipass-npm-7.1.3-b73a16498d-10c0.zip/node_modules/minipass/",\
@@ -1276,6 +1733,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ms", [\
+      ["npm:2.1.3", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/ms-npm-2.1.3-81ff3cfac1-10c0.zip/node_modules/ms/",\
+        "packageDependencies": [\
+          ["ms", "npm:2.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["nanoid", [\
       ["npm:3.3.16", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/nanoid-npm-3.3.16-dbca216f06-10c0.zip/node_modules/nanoid/",\
@@ -1310,6 +1776,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["abbrev", "npm:5.0.0"],\
           ["nopt", "npm:10.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["object-inspect", [\
+      ["npm:1.13.4", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/object-inspect-npm-1.13.4-4e741f9806-10c0.zip/node_modules/object-inspect/",\
+        "packageDependencies": [\
+          ["object-inspect", "npm:1.13.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1394,6 +1869,35 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/proc-log-npm-7.0.0-d836af0493-10c0.zip/node_modules/proc-log/",\
         "packageDependencies": [\
           ["proc-log", "npm:7.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["process", [\
+      ["npm:0.11.10", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/process-npm-0.11.10-aeb3b641ae-10c0.zip/node_modules/process/",\
+        "packageDependencies": [\
+          ["process", "npm:0.11.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["proxy-from-env", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/proxy-from-env-npm-2.1.0-ce678f045b-10c0.zip/node_modules/proxy-from-env/",\
+        "packageDependencies": [\
+          ["proxy-from-env", "npm:2.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["qs", [\
+      ["npm:6.15.3", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/qs-npm-6.15.3-47907326d2-10c0.zip/node_modules/qs/",\
+        "packageDependencies": [\
+          ["es-define-property", "npm:1.0.1"],\
+          ["qs", "npm:6.15.3"],\
+          ["side-channel", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1603,6 +2107,58 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["side-channel", [\
+      ["npm:1.1.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/side-channel-npm-1.1.1-3d97a5a6fb-10c0.zip/node_modules/side-channel/",\
+        "packageDependencies": [\
+          ["es-errors", "npm:1.3.0"],\
+          ["object-inspect", "npm:1.13.4"],\
+          ["side-channel", "npm:1.1.1"],\
+          ["side-channel-list", "npm:1.0.1"],\
+          ["side-channel-map", "npm:1.0.1"],\
+          ["side-channel-weakmap", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["side-channel-list", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/side-channel-list-npm-1.0.1-7a0802d399-10c0.zip/node_modules/side-channel-list/",\
+        "packageDependencies": [\
+          ["es-errors", "npm:1.3.0"],\
+          ["object-inspect", "npm:1.13.4"],\
+          ["side-channel-list", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["side-channel-map", [\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/side-channel-map-npm-1.0.1-5903573b3c-10c0.zip/node_modules/side-channel-map/",\
+        "packageDependencies": [\
+          ["call-bound", "npm:1.0.4"],\
+          ["es-errors", "npm:1.3.0"],\
+          ["get-intrinsic", "npm:1.3.1"],\
+          ["object-inspect", "npm:1.13.4"],\
+          ["side-channel-map", "npm:1.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["side-channel-weakmap", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/side-channel-weakmap-npm-1.0.2-027acaf499-10c0.zip/node_modules/side-channel-weakmap/",\
+        "packageDependencies": [\
+          ["call-bound", "npm:1.0.4"],\
+          ["es-errors", "npm:1.3.0"],\
+          ["get-intrinsic", "npm:1.3.1"],\
+          ["object-inspect", "npm:1.13.4"],\
+          ["side-channel-map", "npm:1.0.1"],\
+          ["side-channel-weakmap", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["source-map-js", [\
       ["npm:1.2.1", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/source-map-js-npm-1.2.1-b9a47d7e1a-10c0.zip/node_modules/source-map-js/",\
@@ -1660,6 +2216,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/tslib-npm-2.8.1-66590b21b8-10c0.zip/node_modules/tslib/",\
         "packageDependencies": [\
           ["tslib", "npm:2.8.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["type-fest", [\
+      ["npm:4.41.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/type-fest-npm-4.41.0-31a6ce52d8-10c0.zip/node_modules/type-fest/",\
+        "packageDependencies": [\
+          ["type-fest", "npm:4.41.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1771,6 +2336,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react", "npm:19.2.17"],\
           ["@types/react-dom", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:19.2.3"],\
           ["@vitejs/plugin-react", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:6.0.4"],\
+          ["contentful", "npm:11.12.7"],\
           ["framer-motion", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:12.42.2"],\
           ["lucide-react", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:1.26.0"],\
           ["oxlint", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:1.75.0"],\

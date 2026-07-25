@@ -240,6 +240,64 @@ export const dayTours = [
       "Conclude your evening with unforgettable memories and optional transfer arrangements.",
     ],
   },
+  {
+  id: "tour-around-zimbabwe",
+  slug: "tour-around-zimbabwe",
+
+  destinationIds: [
+    "victoria-falls",
+    "harare",
+    "great-zimbabwe",
+    "matobo-hills",
+    "hwange-national-park"
+  ],
+
+  title: "Tour Around Zimbabwe",
+
+  image: "https://zazuadventures.com/wp-content/uploads/2026/07/zimbabwe-tour.jpg",
+
+  gallery: [""],
+
+  priceFrom: 4300,
+
+  duration: "7 - 14 Days",
+
+  location: "Zimbabwe",
+
+  category: "Multi-Day Tour",
+
+  type: "multi-day",
+
+  summary:
+    "Discover the beauty, culture, wildlife, and history of Zimbabwe on an unforgettable journey across the country. Explore the mighty Victoria Falls, experience thrilling wildlife safaris, visit ancient historical sites, and immerse yourself in Zimbabwe's breathtaking landscapes and local communities.",
+
+  highlights: [
+    "Explore the magnificent Victoria Falls, one of the world's natural wonders",
+    "Experience unforgettable wildlife encounters in Zimbabwe's national parks",
+    "Discover the ancient Great Zimbabwe historical monument",
+    "Visit the scenic Matobo Hills and experience its cultural heritage",
+    "Enjoy authentic Zimbabwean cuisine and local hospitality",
+    "Experience the diversity of Zimbabwe's landscapes, people, and traditions",
+  ],
+
+  includes: [
+    "Accommodation throughout the tour",
+    "Professional local guide and tour assistance",
+    "Transport between destinations",
+    "Entry fees to selected attractions and activities",
+    "Wildlife safari experiences",
+    "Booking and activity coordination assistance",
+  ],
+
+  itinerary: [
+    "Begin your Zimbabwe adventure in Victoria Falls with sightseeing, adventure activities, and cultural experiences.",
+    "Travel through Zimbabwe's beautiful landscapes while exploring national parks and enjoying wildlife encounters.",
+    "Visit Hwange National Park for a memorable safari experience with opportunities to see elephants, lions, and other wildlife.",
+    "Explore the historic Great Zimbabwe ruins and learn about the country's ancient civilisation.",
+    "Discover the dramatic landscapes and cultural significance of the Matobo Hills.",
+    "Conclude your journey with unforgettable memories of Zimbabwe's wildlife, history, and hospitality.",
+  ],
+},
 ];
 
 export const multiDayTours = [
@@ -250,7 +308,7 @@ export const multiDayTours = [
     title: "Victoria Falls, Chobe",
     image: "https://zazuadventures.com/wp-content/uploads/2026/07/hwange.jpeg",
     gallery: [""],
-    priceFrom: 420,
+    priceFrom: 1450,
     duration: "3 Days",
     location: "Victoria Falls & Chobe",
     category: "Multi-Day Tour",
@@ -281,6 +339,54 @@ export const multiDayTours = [
     ],
   },
   {
+    id: "cape-town-kruger-vic-falls-chobe",
+    slug: "cape-town-kruger-vic-falls-chobe",
+    destinationIds: [
+      "cape-town",
+      "kruger-national-park",
+      "victoria-falls",
+      "chobe-national-park",
+    ],
+    title: "Cape Town, Kruger, Vic Falls and Chobe",
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/HwangeGallery3.png",
+    priceFrom: 4800,
+    duration: "5 Days",
+    location: "South Africa, Zimbabwe & Botswana",
+    category: "Multi-Day Tour",
+    type: "multi-day",
+    summary:
+      "Experience the best of Southern Africa with an unforgettable journey through Cape Town, Kruger National Park, Victoria Falls, and Chobe National Park, combining vibrant city life, world-class safaris, and iconic natural wonders.",
+
+    highlights: [
+      "Explore Cape Town",
+      "Kruger National Park safari",
+      "Guided Victoria Falls tour",
+      "Chobe National Park game drive",
+      "Chobe River boat cruise",
+      "Three-country adventure",
+    ],
+
+    includes: [
+      "Accommodation",
+      "Airport and road transfers",
+      "Guided Cape Town sightseeing",
+      "Kruger National Park game drive",
+      "Guided Victoria Falls tour",
+      "Chobe game drive",
+      "Chobe River boat cruise",
+      "Professional guides",
+    ],
+
+    itinerary: [
+      "Day 1: Arrive in Cape Town and enjoy a guided city tour, including Table Mountain (weather permitting) and the V&A Waterfront.",
+      "Day 2: Fly to Kruger National Park for an afternoon game drive and overnight stay.",
+      "Day 3: Morning safari in Kruger before flying to Victoria Falls for an evening at leisure.",
+      "Day 4: Guided tour of Victoria Falls followed by a full-day excursion to Chobe National Park, including a game drive, buffet lunch, and Chobe River boat cruise.",
+      "Day 5: Leisure morning before your airport transfer for departure.",
+    ],
+  },
+  {
     id: "hwange-victoria-falls-chobe-nata",
     slug: "hwange-national-park-victoria-falls-chobe-nata",
     destinationIds: [
@@ -292,10 +398,8 @@ export const multiDayTours = [
     title: "Hwange National Park, Victoria Falls, Chobe and Nata",
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery4.png",
-      gallery: [
-        ""
-      ],
-    priceFrom: 690,
+    gallery: [""],
+    priceFrom: 2500,
     duration: "4 Days",
     location: "Hwange • Victoria Falls • Chobe • Nata",
     category: "Multi-Day Tour",
@@ -341,7 +445,7 @@ export const multiDayTours = [
     title: "Hwange National Park, Victoria Falls, Chobe and Okavango Delta",
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/07/okavango-scaled.jpg",
-    priceFrom: 1350,
+    priceFrom: 4800,
     duration: "6 Days",
     location: "Zimbabwe & Botswana",
     category: "Multi-Day Tour",
@@ -376,54 +480,6 @@ export const multiDayTours = [
       "Day 4: Transfer to the Okavango Delta and enjoy an afternoon mokoro excursion through the pristine waterways.",
       "Day 5: Full-day Okavango Delta safari with guided bush walks, wildlife viewing, and optional boat activities.",
       "Day 6: Breakfast followed by your departure transfer.",
-    ],
-  },
-  {
-    id: "cape-town-kruger-vic-falls-chobe",
-    slug: "cape-town-kruger-vic-falls-chobe",
-    destinationIds: [
-      "cape-town",
-      "kruger-national-park",
-      "victoria-falls",
-      "chobe-national-park",
-    ],
-    title: "Cape Town, Kruger, Vic Falls and Chobe",
-    image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/HwangeGallery3.png",
-    priceFrom: 825,
-    duration: "5 Days",
-    location: "South Africa, Zimbabwe & Botswana",
-    category: "Multi-Day Tour",
-    type: "multi-day",
-    summary:
-      "Experience the best of Southern Africa with an unforgettable journey through Cape Town, Kruger National Park, Victoria Falls, and Chobe National Park, combining vibrant city life, world-class safaris, and iconic natural wonders.",
-
-    highlights: [
-      "Explore Cape Town",
-      "Kruger National Park safari",
-      "Guided Victoria Falls tour",
-      "Chobe National Park game drive",
-      "Chobe River boat cruise",
-      "Three-country adventure",
-    ],
-
-    includes: [
-      "Accommodation",
-      "Airport and road transfers",
-      "Guided Cape Town sightseeing",
-      "Kruger National Park game drive",
-      "Guided Victoria Falls tour",
-      "Chobe game drive",
-      "Chobe River boat cruise",
-      "Professional guides",
-    ],
-
-    itinerary: [
-      "Day 1: Arrive in Cape Town and enjoy a guided city tour, including Table Mountain (weather permitting) and the V&A Waterfront.",
-      "Day 2: Fly to Kruger National Park for an afternoon game drive and overnight stay.",
-      "Day 3: Morning safari in Kruger before flying to Victoria Falls for an evening at leisure.",
-      "Day 4: Guided tour of Victoria Falls followed by a full-day excursion to Chobe National Park, including a game drive, buffet lunch, and Chobe River boat cruise.",
-      "Day 5: Leisure morning before your airport transfer for departure.",
     ],
   },
 ];
@@ -474,7 +530,7 @@ export const packages = [
     title: "AM Bamba Tram, Falls Tour and Boma",
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/07/Bamba-Tram_2.jpg",
-    priceFrom: 260,
+    priceFrom: 200,
     duration: "Full Day",
     location: "Victoria Falls",
     category: "Package",
@@ -509,7 +565,7 @@ export const packages = [
     title: "AM Safari Drive, Helicopter Flight and Boma Dinner",
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/07/Game-Drives.jpg",
-    priceFrom: 260,
+    priceFrom: 365,
     duration: "Full Day",
     location: "Victoria Falls",
     category: "Package",
@@ -544,7 +600,7 @@ export const packages = [
     title: "Lion/Elephant Walk, Helicopter Flight and Sunset Cruise",
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/05/583051098_829236743146707_772401892647147049_n.jpg",
-    priceFrom: 980,
+    priceFrom: 450,
     duration: "Full Day",
     location: "Victoria Falls",
     category: "Package",

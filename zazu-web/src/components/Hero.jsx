@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
+import { getHeroSlides } from "../services/heroSlides";
 
-const slides = [
+const FALLBACK_SLIDES = [
   {
     image:
       "https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery1.png",
@@ -67,6 +68,7 @@ const slides = [
 
 function Hero() {
   const [current, setCurrent] = useState(0);
+  const [slides, setSlides] = useState(FALLBACK_SLIDES);
 
   const nextSlide = () => setCurrent((prev) => (prev + 1) % slides.length);
 
@@ -74,16 +76,50 @@ function Hero() {
     setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
 
   useEffect(() => {
+    let isMounted = true;
+
+    async function loadHeroSlides() {
+      try {
+        const contentfulSlides = await getHeroSlides();
+
+        if (isMounted && contentfulSlides.length > 0) {
+          setSlides(contentfulSlides);
+          setCurrent(0);
+          return;
+        }
+      } catch (error) {
+        console.warn("Unable to load Contentful hero slides:", error);
+      }
+
+      if (isMounted) {
+        setSlides(FALLBACK_SLIDES);
+        setCurrent(0);
+      }
+    }
+
+    loadHeroSlides();
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!slides.length) {
+      return undefined;
+    }
+
     slides.forEach((slide) => {
       const img = new Image();
       img.src = slide.image;
     });
+
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, 6000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [slides]);
 
   const scrollToContent = () => {
     const destinationsSection = document.getElementById("destinations");
@@ -109,10 +145,10 @@ function Hero() {
       <div className="absolute inset-0">
         {slides.map((slide, index) => (
           <motion.img
-            key={slide.image}
+            key={`${slide.title}-${slide.image}`}
             src={slide.image}
             alt={slide.title}
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-full object-cover object-center"
             initial={false}
             animate={{
               opacity: current === index ? 1 : 0,
@@ -134,6 +170,7 @@ function Hero() {
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/40 to-transparent" />
 
       {/* Hero Content */}
       <div className="relative z-20 mx-auto flex w-full max-w-6xl justify-center px-6">
@@ -146,23 +183,23 @@ function Hero() {
           className="max-w-4xl text-center text-white"
         >
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-white/80">
-            {slides[current].eyebrow}
+            {slides[current]?.eyebrow}
           </p>
 
           <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
-            {slides[current].title}
+            {slides[current]?.title}
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/90 lg:text-lg">
-            {slides[current].description}
+            {slides[current]?.description}
           </p>
 
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              to={slides[current].primaryAction.href}
+              to={slides[current]?.primaryAction?.href || "/tours"}
               className="rounded-full border border-white bg-transparent px-8 py-4 font-semibold text-white transition duration-300 hover:bg-white hover:text-[#203A4A]"
             >
-              {slides[current].primaryAction.label}
+              {slides[current]?.primaryAction?.label || "Explore"}
             </Link>
           </div>
         </motion.div>

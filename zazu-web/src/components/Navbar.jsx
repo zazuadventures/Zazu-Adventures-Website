@@ -1,10 +1,50 @@
 import React, { useEffect, useState } from "react";
+import { getSiteSettings } from "../services/siteSettings";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+
+const DEFAULT_LOGO_URL =
+  "https://images.ctfassets.net/ht2d038ql6u5/5GHLkFd4D8wcoZhWby1Mau/1953d9e68b2f22b7c8ef52f7c865ec86/zazulogo.png";
+
+const FALLBACK_MENU_ITEMS = [
+  { label: "Home", href: "/" },
+  { label: "Tours", href: "/tours" },
+  { label: "Travel Services", href: "/travel-services" },
+  { label: "Blog", href: "/travel-guide" },
+  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
+];
+
+function normalizeNavigationItem(item) {
+  const fields = item?.fields ?? item ?? {};
+
+  return {
+    label: fields.label ?? fields.title ?? "",
+    href: fields.href ?? fields.path ?? "",
+    order: fields.order ?? 0,
+    openInNewTab: Boolean(fields.openInNewTab),
+  };
+}
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const [settings, setSettings] = useState(null);
+
+  useEffect(() => {
+    async function loadSettings() {
+      try {
+        const data = await getSiteSettings();
+        setSettings(data?.fields ?? null);
+      } catch (error) {
+        console.warn("Unable to load Contentful site settings:", error);
+        setSettings(null);
+      }
+    }
+
+    loadSettings();
+  }, []);
 
   // Change navbar on scroll
   useEffect(() => {
@@ -25,14 +65,19 @@ const Navbar = () => {
     };
   }, [isOpen]);
 
-  const menuItems = [
-    { number: "01", title: "Home", path: "/" },
-    { number: "02", title: "Tours", path: "/tours" },
-    { number: "03", title: "Travel Services", path: "/travel-services" },
-    { number: "04", title: "Blog", path: "/travel-guide" },
-    { number: "05", title: "About", path: "/about" },
-    { number: "06", title: "Contact", path: "/contact" },
-  ];
+  const logo = settings?.logo?.fields?.file?.url
+    ? `https:${settings.logo.fields.file.url}`
+    : "";
+  const logoSrc = logo || DEFAULT_LOGO_URL;
+
+  const menuItems = (settings?.primaryNavigation?.length
+    ? settings.primaryNavigation
+    : FALLBACK_MENU_ITEMS
+  )
+    .map(normalizeNavigationItem)
+    .filter((item) => item.label && item.href)
+    .sort((a, b) => a.order - b.order)
+    .slice(0, 6);
 
   const desktopLinkClasses = ({ isActive }) =>
     [
@@ -53,6 +98,37 @@ const Navbar = () => {
       .filter(Boolean)
       .join(" ");
 
+  const renderMenuLink = (item, key) => {
+    const isExternal = /^https?:\/\//i.test(item.href);
+
+    if (isExternal || item.openInNewTab) {
+      return (
+        <a
+          key={key}
+          href={item.href}
+          target={item.openInNewTab ? "_blank" : undefined}
+          rel={item.openInNewTab ? "noreferrer" : undefined}
+          onClick={() => setIsOpen(false)}
+          className={desktopLinkClasses({ isActive: false })}
+        >
+          {item.label}
+        </a>
+      );
+    }
+
+    return (
+      <NavLink
+        key={key}
+        to={item.href}
+        end={item.href === "/"}
+        onClick={() => setIsOpen(false)}
+        className={desktopLinkClasses}
+      >
+        {item.label}
+      </NavLink>
+    );
+  };
+
   return (
     <>
       {/* ===================== NAVBAR ===================== */}
@@ -71,7 +147,7 @@ const Navbar = () => {
             aria-label="Zazu Adventures Home"
           >
             <img
-              src="https://zazuadventures.com/wp-content/uploads/2026/07/zazulogo.png"
+              src={logoSrc}
               alt="Zazu Adventures"
               width={180}
               height={70}
@@ -84,29 +160,7 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-10">
-            <NavLink to="/" end className={desktopLinkClasses}>
-              Home
-            </NavLink>
-
-            <NavLink to="/tours" className={desktopLinkClasses}>
-              Tours
-            </NavLink>
-
-            <NavLink to="/travel-services" className={desktopLinkClasses}>
-              Travel Services
-            </NavLink>
-
-            <NavLink to="/travel-guide" className={desktopLinkClasses}>
-              Blog
-            </NavLink>
-
-            <NavLink to="/about" className={desktopLinkClasses}>
-              About
-            </NavLink>
-
-            <NavLink to="/contact" className={desktopLinkClasses}>
-              Contact
-            </NavLink>
+            {menuItems.map((item) => renderMenuLink(item, `${item.label}-${item.href}`))}
           </div>
 
           {/* Mobile Menu Button */}
@@ -145,7 +199,7 @@ const Navbar = () => {
                 aria-label="Zazu Adventures Home"
               >
                 <img
-                  src="https://zazuadventures.com/wp-content/uploads/2026/07/zazulogo.png"
+                  src={logoSrc}
                   alt="Zazu Adventures"
                   width={150}
                   height={55}
@@ -159,9 +213,7 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="flex items-center gap-2 text-[#333333]"
               >
-                <span className="text-sm font-semibold uppercase">
-                  Close
-                </span>
+                <span className="text-sm font-semibold uppercase">Close</span>
                 <X className="h-6 w-6" />
               </button>
             </div>
@@ -170,23 +222,49 @@ const Navbar = () => {
           {/* Mobile Navigation */}
           <div className="flex-1 overflow-y-auto">
             <div className="mx-auto max-w-7xl px-6 py-10">
-              {menuItems.map((item) => (
-                <NavLink
-                  key={item.number}
-                  to={item.path}
-                  end={item.path === "/"}
-                  onClick={() => setIsOpen(false)}
-                  className={mobileLinkClasses}
-                >
-                  <span className="text-xs font-semibold text-[#333333]/50">
-                    {item.number}
-                  </span>
+              {menuItems.map((item, index) => {
+                const number = String(index + 1).padStart(2, "0");
+                const isExternal = /^https?:\/\//i.test(item.href);
 
-                  <span className="text-2xl font-semibold text-[#333333] transition-colors duration-300 group-hover:text-[#C29B5A] sm:text-4xl">
-                    {item.title}
-                  </span>
-                </NavLink>
-              ))}
+                if (isExternal || item.openInNewTab) {
+                  return (
+                    <a
+                      key={`${item.label}-${item.href}`}
+                      href={item.href}
+                      target={item.openInNewTab ? "_blank" : undefined}
+                      rel={item.openInNewTab ? "noreferrer" : undefined}
+                      onClick={() => setIsOpen(false)}
+                      className={mobileLinkClasses({ isActive: false })}
+                    >
+                      <span className="text-xs font-semibold text-[#333333]/50">
+                        {number}
+                      </span>
+
+                      <span className="text-2xl font-semibold text-[#333333] transition-colors duration-300 group-hover:text-[#C29B5A] sm:text-4xl">
+                        {item.label}
+                      </span>
+                    </a>
+                  );
+                }
+
+                return (
+                  <NavLink
+                    key={`${item.label}-${item.href}`}
+                    to={item.href}
+                    end={item.href === "/"}
+                    onClick={() => setIsOpen(false)}
+                    className={mobileLinkClasses}
+                  >
+                    <span className="text-xs font-semibold text-[#333333]/50">
+                      {number}
+                    </span>
+
+                    <span className="text-2xl font-semibold text-[#333333] transition-colors duration-300 group-hover:text-[#C29B5A] sm:text-4xl">
+                      {item.label}
+                    </span>
+                  </NavLink>
+                );
+              })}
             </div>
           </div>
         </div>
