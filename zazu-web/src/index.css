@@ -1,5 +1,23 @@
 @import "tailwindcss";
 
-*{
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
   font-family: 'Poppins', sans-serif;
+}
+
+.elfsight-app-ee8c887a-1599-4921-a466-087cb9ca8299 {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
 }

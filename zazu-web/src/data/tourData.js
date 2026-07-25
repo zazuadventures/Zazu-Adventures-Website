@@ -320,6 +320,38 @@ export const multiDayTours = [
       "Day 6: Return journey and departure.",
     ],
   },
+  {
+    id: "zambezi-hwange-escape",
+    slug: "zambezi-and-hwange-wilderness-escape",
+    destinationIds: ["victoria-falls", "hwange-national-park", "zambezi-river"],
+    title: "Zambezi and Hwange Wilderness Escape",
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/HwangeGallery3.png",
+    priceFrom: 825,
+    duration: "5 Days",
+    location: "Victoria Falls + Hwange",
+    category: "Multi-Day Tour",
+    type: "multi-day",
+    summary:
+      "A balanced safari and river itinerary blending Victoria Falls, wildlife viewing, and relaxed Zambezi moments.",
+    highlights: [
+      "Victoria Falls introduction",
+      "Hwange safari experience",
+      "Zambezi river activity",
+    ],
+    includes: [
+      "Itinerary planning",
+      "Transfer coordination",
+      "Safari and cruise assistance",
+    ],
+    itinerary: [
+      "Day 1: Arrive in Victoria Falls and settle into your accommodation.",
+      "Day 2: Guided Victoria Falls experience and sunset river activity.",
+      "Day 3: Transfer to Hwange for an afternoon safari drive.",
+      "Day 4: Full-day wildlife viewing in Hwange National Park.",
+      "Day 5: Return transfer with optional final Zambezi stop.",
+    ],
+  },
 ];
 
 export const packages = [
@@ -398,6 +430,37 @@ export const packages = [
       "Days 1-2: Victoria Falls experiences.",
       "Days 3-4: Safari and river activities.",
       "Days 5-6: Optional Botswana extension and departure.",
+    ],
+  },
+  {
+    id: "victoria-falls-chobe-package",
+    slug: "victoria-falls-and-chobe-package",
+    destinationIds: ["victoria-falls", "chobe-national-park", "zambezi-river"],
+    title: "Victoria Falls and Chobe Package",
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery5.png",
+    priceFrom: 980,
+    duration: "4 Days",
+    location: "Victoria Falls + Chobe",
+    category: "Package",
+    type: "package",
+    summary:
+      "A cross-border package that combines Victoria Falls, river scenery, and Chobe's famous elephant viewing.",
+    highlights: [
+      "Two-country itinerary",
+      "River and safari combination",
+      "Great top-selling package",
+    ],
+    includes: [
+      "Trip coordination",
+      "Transfer planning",
+      "Activity booking support",
+    ],
+    itinerary: [
+      "Day 1: Victoria Falls arrival and guided tour.",
+      "Day 2: Zambezi cruise or scenic flight add-on.",
+      "Day 3: Transfer to Chobe for riverfront safari time.",
+      "Day 4: Morning game viewing and departure support.",
     ],
   },
 ];

@@ -1,111 +1,73 @@
 import { Link } from "react-router-dom";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 function Footer() {
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "Destinations", path: "/destinations" },
-    { name: "Experiences", path: "/experiences" },
-    { name: "Tours", path: "/tours" },
-    { name: "Travel Guide", path: "/travel-guide" },
-    { name: "About Us", path: "/about" },
-    { name: "Contact", path: "/contact" },
-  ];
+  const socialLinks = [
+  {
+    label: "Facebook",
+    href: "https://facebook.com",
+    icon: FaFacebookF,
+  },
+  {
+    label: "Instagram",
+    href: "https://instagram.com",
+    icon: FaInstagram,
+  },
+  {
+    label: "YouTube",
+    href: "https://youtube.com",
+    icon: FaYoutube,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com",
+    icon: FaLinkedinIn,
+  },
+];
 
   return (
-    <footer className="bg-[#203A4A] px-6 py-12 text-white">
-      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-10 md:grid-cols-4">
+    <footer className="bg-[#203A4A] px-6 py-8 text-white">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
+        <Link to="/" className="flex items-center justify-center md:justify-start" aria-label="Zazu Adventures Home">
+          <img
+            src="https://zazuadventures.com/wp-content/uploads/2026/07/zazulogo.png"
+            alt="Zazu Adventures"
+            width={180}
+            height={70}
+            loading="eager"
+            decoding="async"
+            className="h-12 w-auto object-contain"
+          />
+        </Link>
 
-        {/* Brand */}
-        <div>
-          <h2 className="text-xl font-bold">
-            Zazu Adventures
-          </h2>
-
-          <p className="mt-4 text-sm leading-6 text-gray-300">
-            Creating unforgettable safari, tour and travel experiences
-            in Victoria Falls and beyond.
+        <div className="text-center">
+          <p className="text-sm text-gray-200">
+            ©2026 Zazu Adventures. All rights reserved.
+          </p>
+          <p className="mt-2 text-xs font-medium text-gray-300">
+            Built by codewithdaviess
           </p>
         </div>
 
+        <div className="flex items-center justify-center gap-3 md:justify-end">
+          {socialLinks.map((social) => {
+            const Icon = social.icon;
 
-        {/* Navigation */}
-        <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide">
-            Explore
-          </h3>
-
-          <ul className="space-y-3 text-sm text-gray-300">
-            {navLinks.map((link) => (
-              <li key={link.name}>
-                <Link
-                  to={link.path}
-                  className="transition hover:text-white"
-                >
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+            return (
+              <a
+                key={social.label}
+                href={social.href}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={social.label}
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:-translate-y-0.5 hover:bg-white hover:text-[#203A4A]"
+              >
+                <Icon className="h-5 w-5" />
+              </a>
+            );
+          })}
         </div>
-
-
-        {/* Contact */}
-        <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide">
-            Contact
-          </h3>
-
-          <ul className="space-y-3 text-sm text-gray-300">
-            <li>
-              Victoria Falls, Zimbabwe
-            </li>
-
-            <li>
-              +263 77 123 4567
-            </li>
-
-            <li>
-              info@zazuadventures.com
-            </li>
-          </ul>
-        </div>
-
-
-        {/* Newsletter / CTA */}
-        <div>
-          <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide">
-            Plan Your Trip
-          </h3>
-
-          <p className="text-sm text-gray-300">
-            Ready for your next adventure?
-          </p>
-
-          <Link
-            to="/contact"
-            className="
-              mt-5 inline-flex rounded-full
-              bg-white px-5 py-3
-              text-sm font-semibold
-              text-[#203A4A]
-              transition
-              hover:bg-gray-200
-            "
-          >
-            Book Now
-          </Link>
-        </div>
-
       </div>
-
-
-      {/* Bottom */}
-      <div className="mx-auto mt-10 max-w-6xl border-t border-white/20 pt-6 text-center text-xs text-gray-300">
-        <p>
-          ©2026 Zazu Adventures. All rights reserved.
-        </p>
-      </div>
-
     </footer>
   );
 }

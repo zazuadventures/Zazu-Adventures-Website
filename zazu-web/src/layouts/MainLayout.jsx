@@ -5,9 +5,9 @@ import { pageReveal } from "../lib/motion";
 
 function MainLayout({ children }) {
   return (
-    <div className="flex min-h-screen flex-col bg-white">
+    <div className="grid min-h-dvh grid-rows-[auto_1fr_auto] bg-white">
       <Navbar />
-      <main className="flex flex-1 flex-col">
+      <main className="min-h-0">
         {children ? (
           <motion.div
             className="mx-auto w-full pb-0"

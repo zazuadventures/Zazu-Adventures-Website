@@ -97,7 +97,7 @@ function TourCatalog({ items = [], showSections = false }) {
                   </span>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+                <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
                   {section.items.map((activity) => (
                     <ActivityCard key={activity.slug} activity={activity} />
                   ))}

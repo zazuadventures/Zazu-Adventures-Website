@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:19.2.8"],\
           ["react-dom", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:19.2.8"],\
           ["react-helmet-async", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:3.0.0"],\
+          ["react-icons", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:5.7.0"],\
           ["react-router-dom", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:7.18.1"],\
           ["tailwindcss", "npm:4.3.3"],\
           ["vite", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:8.1.5"],\
@@ -1463,6 +1464,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-icons", [\
+      ["npm:5.7.0", {\
+        "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/react-icons-npm-5.7.0-bdc6147bd0-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "npm:5.7.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:5.7.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-icons-virtual-0285079c02/5/AppData/Local/Yarn/Berry/cache/react-icons-npm-5.7.0-bdc6147bd0-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:19.2.17"],\
+          ["react", "npm:19.2.8"],\
+          ["react-icons", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:5.7.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-router", [\
       ["npm:7.18.1", {\
         "packageLocation": "../../../../AppData/Local/Yarn/Berry/cache/react-router-npm-7.18.1-b299eb8604-10c0.zip/node_modules/react-router/",\
@@ -1754,6 +1777,7 @@ const RAW_RUNTIME_STATE =
           ["react", "npm:19.2.8"],\
           ["react-dom", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:19.2.8"],\
           ["react-helmet-async", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:3.0.0"],\
+          ["react-icons", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:5.7.0"],\
           ["react-router-dom", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:7.18.1"],\
           ["tailwindcss", "npm:4.3.3"],\
           ["vite", "virtual:2b5ac7ec221bd121e7b00e760956a1f344c8b25f6d2498cbe259903197d1158697217808dec6a3e671c0c997b684130de33ac6cc8d6c3204f8b13461628362d0#npm:8.1.5"],\

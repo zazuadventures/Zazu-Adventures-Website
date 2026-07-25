@@ -43,7 +43,7 @@ function ActivityCard({ activity }) {
           </h3>
         </Link>
         {tripLabel && (
-          <span className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+          <span className="mb-4 text-xs font-semibold uppercase tracking-[0.1em] text-gray-500">
             {tripLabel}
           </span>
         )}

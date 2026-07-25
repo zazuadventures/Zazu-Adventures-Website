@@ -15,7 +15,7 @@ function ActivitiesSection({
     <section className={sectionClassName} id={id}>
       <div className={containerClassName}>
         {/* Header */}
-        <div className="mb-10 max-w-2xl text-left">
+        <div className="mb-8 max-w-2xl text-left">
           <h2 className="mt-2 text-xl font-semibold text-[#333333]">{heading}</h2>
           {subtitle && (
             <p className="mt-2 text-gray-600 text-sm leading-relaxed max-w-xl">
@@ -25,7 +25,7 @@ function ActivitiesSection({
         </div>
 
         {/* Activities Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((activity) => (
             <ActivityCard key={activity.id} activity={activity} />
           ))}
