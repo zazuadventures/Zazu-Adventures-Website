@@ -1,36 +1,41 @@
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { DEFAULT_LOGO_URL } from "../lib/branding";
 
 function Footer() {
   const socialLinks = [
-  {
-    label: "Facebook",
-    href: "https://facebook.com",
-    icon: FaFacebookF,
-  },
-  {
-    label: "Instagram",
-    href: "https://instagram.com",
-    icon: FaInstagram,
-  },
-  {
-    label: "YouTube",
-    href: "https://youtube.com",
-    icon: FaYoutube,
-  },
-  {
-    label: "LinkedIn",
-    href: "https://linkedin.com",
-    icon: FaLinkedinIn,
-  },
-];
+    {
+      label: "Facebook",
+      href: "https://facebook.com",
+      icon: FaFacebookF,
+    },
+    {
+      label: "Instagram",
+      href: "https://instagram.com",
+      icon: FaInstagram,
+    },
+    {
+      label: "YouTube",
+      href: "https://youtube.com",
+      icon: FaYoutube,
+    },
+    {
+      label: "LinkedIn",
+      href: "https://linkedin.com",
+      icon: FaLinkedinIn,
+    },
+  ];
 
   return (
     <footer className="bg-[#203A4A] px-6 py-8 text-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
-        <Link to="/" className="flex items-center justify-center md:justify-start" aria-label="Zazu Adventures Home">
+        <Link
+          to="/"
+          className="flex items-center justify-center md:justify-start"
+          aria-label="Zazu Adventures Home"
+        >
           <img
-            src="https://zazuadventures.com/wp-content/uploads/2026/07/zazulogo.png"
+            src={DEFAULT_LOGO_URL}
             alt="Zazu Adventures"
             width={180}
             height={70}
@@ -42,7 +47,7 @@ function Footer() {
 
         <div className="text-center">
           <p className="text-sm text-gray-200">
-            ©2026 Zazu Adventures. All rights reserved.
+            Copyright © 2026 Zazu Adventures. All rights reserved.
           </p>
           <p className="mt-2 text-xs font-medium text-gray-300">
             Built by codewithdaviess

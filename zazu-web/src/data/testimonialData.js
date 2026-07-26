@@ -1,30 +1,30 @@
 export const testimonials = [
   {
-    id: "t1",
-    name: "Alicia M.",
-    date: "June 18, 2026",
-    image: "https://placehold.co/96x96/png?text=AM",
+    id: "debra",
+    name: "Debra",
+    date: "May 12, 2026",
+    image: "https://placehold.co/96x96/png?text=D",
     text:
-      "We booked the Victoria Falls day tour and everything felt smooth from start to finish. The guide was friendly, the timing was great, and the views were even better than we expected. It was one of those trips where every detail felt thoughtfully handled.",
+      "We had the most wonderful experience exploring Victoria Falls and Botswana with Shalom. As a local, his knowledge of the region is incredible, but what truly set him apart was his pleasant and friendly nature. He made every moment of our journey feel seamless and special. We truly enjoyed the time we spent with him and couldn’t have asked for a more dedicated or professional guide. If you want an authentic, first-rate experience in the Zambezi region, Shalom is the best partner you could find! I highly recommend him if you are planning to visit this area.",
   },
   {
-    id: "t2",
-    name: "Daniel K.",
-    date: "June 29, 2026",
-    image: "https://placehold.co/96x96/png?text=DK",
+    id: "nolan",
+    name: "Nolan",
+    date: "May 12, 2026",
+    image: "https://placehold.co/96x96/png?text=N",
     text:
-      "The safari package was a perfect mix of comfort and adventure. We had enough time to enjoy the wildlife without ever feeling rushed, and the whole experience was organized with real care. I would happily recommend Zazu Adventures to anyone visiting Zimbabwe.",
+      'Shalom is an exceptional guide who delivers on his promise of premier service. His "insider" knowledge of Victoria Falls and the surrounding areas added so much depth to our trip. Not only is he deeply knowledgeable, but he is also incredibly personable and attentive. He handled our transfers and tours with total dedication, transforming our once-in-a-lifetime trip into an unforgettable journey. We highly recommend Shalom to anyone seeking a personal touch and authentic local expertise.',
   },
   {
-    id: "t3",
-    name: "Priya S.",
-    date: "July 07, 2026",
-    image: "https://placehold.co/96x96/png?text=PS",
+    id: "laurent-delalex",
+    name: "Laurent Delalex",
+    date: "May 15, 2026",
+    image: "https://placehold.co/96x96/png?text=LD",
     text:
-      "Our multiday trip was exactly what we hoped for. The pacing was great, the accommodation choices were solid, and the support throughout the journey made everything stress-free. We came back with amazing photos and even better memories.",
+      "My wife and I visited Victoria Falls for New Year 2026. Shalom was very kind and helpful to show us around and even to organize, at the very last minute, an unexpected trip over the border to enjoy the falls from the Zambian side and its amazing Devil's Pool.",
   },
   {
-    id: "t4",
+    id: "michael-t",
     name: "Michael T.",
     date: "July 14, 2026",
     image: "https://placehold.co/96x96/png?text=MT",

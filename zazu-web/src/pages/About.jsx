@@ -12,7 +12,7 @@ function About() {
         heading="About"
         description="Zazu Adventures about page with a basic SEO foundation."
         keywords="Zazu Adventures, about"
-        image="https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery2.png"
+        image="https://images.ctfassets.net/ht2d038ql6u5/2YtkiP0TBLd3j0kccVhk80/2d8b481aed35b809a6ee1aa93170ff17/ToursHero.png"
         eyebrow="About Us"
       />
 

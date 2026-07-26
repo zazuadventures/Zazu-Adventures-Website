@@ -15,9 +15,9 @@ function Tours() {
       <main className="w-full">
         <PageHero
           eyebrow="Tours"
-          title="Find the right trip for the time you have"
+         title="Victoria Falls Safari Tours, Day Trips & Packages"
           description="Browse the full collection, then filter by day trips, multi-day adventures, or bundled packages."
-          image="https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery1.png"
+          image="https://images.ctfassets.net/ht2d038ql6u5/7MWmzdSdFQVelsHSmoKx3m/27a8c83a868769d96453ddef7e8a1c80/TourHero2.jpg"
           minHeightClassName="min-h-[72vh]"
         />
 

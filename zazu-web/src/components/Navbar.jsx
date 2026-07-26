@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { getSiteSettings } from "../services/siteSettings";
+import { DEFAULT_LOGO_URL } from "../lib/branding";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-
-const DEFAULT_LOGO_URL =
-  "https://images.ctfassets.net/ht2d038ql6u5/5GHLkFd4D8wcoZhWby1Mau/1953d9e68b2f22b7c8ef52f7c865ec86/zazulogo.png";
 
 const FALLBACK_MENU_ITEMS = [
   { label: "Home", href: "/" },

@@ -1,3 +1,5 @@
+import { testimonials as fallbackTestimonials } from "../data/testimonialData";
+
 const API =
   "https://zazuadventures.com/wp-json/wp/v2/comments?post=760&per_page=100";
 
@@ -57,13 +59,19 @@ function normalizeTestimonial(comment) {
 }
 
 export const getTestimonials = async () => {
-  const response = await fetch(API);
+  try {
+    const response = await fetch(API);
 
-  if (!response.ok) {
-    throw new Error("Failed to load testimonials");
+    if (!response.ok) {
+      return fallbackTestimonials;
+    }
+
+    const data = await response.json();
+    const normalized = data.map(normalizeTestimonial).filter((item) => item.text);
+
+    return normalized.length ? normalized : fallbackTestimonials;
+  } catch (error) {
+    console.warn("Falling back to local testimonials:", error);
+    return fallbackTestimonials;
   }
-
-  const data = await response.json();
-
-  return data.map(normalizeTestimonial).filter((item) => item.text);
 };
