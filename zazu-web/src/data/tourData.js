@@ -23,17 +23,9 @@ export const dayTours = [
     title: "Guided Tour of Victoria Falls",
 
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/3hegzew0Tnkb1cwQmO8U4U/6fc32fa5ad5c37398bed01e98b067bf4/GuidedTourHero.jpg",
 
     gallery: [
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG_2859-scaled.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG_2895-scaled.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG-20250623-WA0025.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG-20250731-WA0002-1.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG-20250622-WA0009-1.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG-20250622-WA0005-1.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG-20250909-WA0163.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-06-at-16.50.28.jpeg",
     ],
 
     priceFrom: 40,
@@ -82,17 +74,9 @@ export const dayTours = [
     title: "Helicopter Flight Over Victoria Falls",
 
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience-1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/6ZVrSYkOhqhWtxuPQWTpMP/280053ce7af25a03b993f5a3e626d0db/HelicopterHero.jpg",
 
     gallery: [
-      "https://zazuadventures.com/wp-content/uploads/2026/05/Screenshot-2026-05-06-at-12.59.19.png",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience_4.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience_6.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience_5.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience_2.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience_3.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Shearwater-Victoria-Falls-Zambezi-Spectacular-Helicopter-Experience_1.jpg",
     ],
 
     priceFrom: 205,
@@ -140,17 +124,9 @@ export const dayTours = [
     title: "Zambezi River Sunset Cruise",
 
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Zambezi-Breeze.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/26kOabG3F85v8yIWeneqm8/a08b9faeec35a51a1a285da6933c48b1/BoatCruiseHero.jpg",
 
     gallery: [
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Zambezi-Explorer.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Zambezi-Explorer_1.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Zambezi-Explorer_3.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Hippos.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Zambezi-Explorer_2.jpeg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Private-Sunset-Cruise.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Zambezi-Explorer_4.jpg",
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Zambezi-Breeze_1.jpg",
     ],
 
     priceFrom: 80,
@@ -198,7 +174,8 @@ export const dayTours = [
 
     title: "The Boma Dinner & Drum Show",
 
-    image: "https://zazuadventures.com/wp-content/uploads/2026/07/dsc6710.jpg",
+    image:
+      "https://images.ctfassets.net/ht2d038ql6u5/7sM5BxVGSXA90Y8A4umxGY/61c2b4ebd78900b881ce55b974e6bf40/BomaHero.jpg",
 
     gallery: [""],
 
@@ -241,63 +218,64 @@ export const dayTours = [
     ],
   },
   {
-  id: "tour-around-zimbabwe",
-  slug: "tour-around-zimbabwe",
+    id: "tour-around-zimbabwe",
+    slug: "tour-around-zimbabwe",
 
-  destinationIds: [
-    "victoria-falls",
-    "harare",
-    "great-zimbabwe",
-    "matobo-hills",
-    "hwange-national-park"
-  ],
+    destinationIds: [
+      "victoria-falls",
+      "harare",
+      "great-zimbabwe",
+      "matobo-hills",
+      "hwange-national-park",
+    ],
 
-  title: "Tour Around Zimbabwe",
+    title: "Tour Around Zimbabwe",
 
-  image: "https://zazuadventures.com/wp-content/uploads/2026/07/zimbabwe-tour.jpg",
+    image:
+      "https://zazuadventures.com/wp-content/uploads/2026/07/zimbabwe-tour.jpg",
 
-  gallery: [""],
+    gallery: [""],
 
-  priceFrom: 4300,
+    priceFrom: 4300,
 
-  duration: "7 - 14 Days",
+    duration: "7 - 14 Days",
 
-  location: "Zimbabwe",
+    location: "Zimbabwe",
 
-  category: "Multi-Day Tour",
+    category: "Multi-Day Tour",
 
-  type: "multi-day",
+    type: "multi-day",
 
-  summary:
-    "Discover the beauty, culture, wildlife, and history of Zimbabwe on an unforgettable journey across the country. Explore the mighty Victoria Falls, experience thrilling wildlife safaris, visit ancient historical sites, and immerse yourself in Zimbabwe's breathtaking landscapes and local communities.",
+    summary:
+      "Discover the beauty, culture, wildlife, and history of Zimbabwe on an unforgettable journey across the country. Explore the mighty Victoria Falls, experience thrilling wildlife safaris, visit ancient historical sites, and immerse yourself in Zimbabwe's breathtaking landscapes and local communities.",
 
-  highlights: [
-    "Explore the magnificent Victoria Falls, one of the world's natural wonders",
-    "Experience unforgettable wildlife encounters in Zimbabwe's national parks",
-    "Discover the ancient Great Zimbabwe historical monument",
-    "Visit the scenic Matobo Hills and experience its cultural heritage",
-    "Enjoy authentic Zimbabwean cuisine and local hospitality",
-    "Experience the diversity of Zimbabwe's landscapes, people, and traditions",
-  ],
+    highlights: [
+      "Explore the magnificent Victoria Falls, one of the world's natural wonders",
+      "Experience unforgettable wildlife encounters in Zimbabwe's national parks",
+      "Discover the ancient Great Zimbabwe historical monument",
+      "Visit the scenic Matobo Hills and experience its cultural heritage",
+      "Enjoy authentic Zimbabwean cuisine and local hospitality",
+      "Experience the diversity of Zimbabwe's landscapes, people, and traditions",
+    ],
 
-  includes: [
-    "Accommodation throughout the tour",
-    "Professional local guide and tour assistance",
-    "Transport between destinations",
-    "Entry fees to selected attractions and activities",
-    "Wildlife safari experiences",
-    "Booking and activity coordination assistance",
-  ],
+    includes: [
+      "Accommodation throughout the tour",
+      "Professional local guide and tour assistance",
+      "Transport between destinations",
+      "Entry fees to selected attractions and activities",
+      "Wildlife safari experiences",
+      "Booking and activity coordination assistance",
+    ],
 
-  itinerary: [
-    "Begin your Zimbabwe adventure in Victoria Falls with sightseeing, adventure activities, and cultural experiences.",
-    "Travel through Zimbabwe's beautiful landscapes while exploring national parks and enjoying wildlife encounters.",
-    "Visit Hwange National Park for a memorable safari experience with opportunities to see elephants, lions, and other wildlife.",
-    "Explore the historic Great Zimbabwe ruins and learn about the country's ancient civilisation.",
-    "Discover the dramatic landscapes and cultural significance of the Matobo Hills.",
-    "Conclude your journey with unforgettable memories of Zimbabwe's wildlife, history, and hospitality.",
-  ],
-},
+    itinerary: [
+      "Begin your Zimbabwe adventure in Victoria Falls with sightseeing, adventure activities, and cultural experiences.",
+      "Travel through Zimbabwe's beautiful landscapes while exploring national parks and enjoying wildlife encounters.",
+      "Visit Hwange National Park for a memorable safari experience with opportunities to see elephants, lions, and other wildlife.",
+      "Explore the historic Great Zimbabwe ruins and learn about the country's ancient civilisation.",
+      "Discover the dramatic landscapes and cultural significance of the Matobo Hills.",
+      "Conclude your journey with unforgettable memories of Zimbabwe's wildlife, history, and hospitality.",
+    ],
+  },
 ];
 
 export const multiDayTours = [
@@ -306,7 +284,7 @@ export const multiDayTours = [
     slug: "victoria-falls-chobe",
     destinationIds: ["victoria-falls", "chobe-national-park", "zambezi-river"],
     title: "Victoria Falls, Chobe",
-    image: "https://zazuadventures.com/wp-content/uploads/2026/07/hwange.jpeg",
+    image: "https://images.ctfassets.net/ht2d038ql6u5/1moJS9sG0MvQy9iSRMYa0P/2f7b41f3b0587f481f8cd8b6cc1d8c46/GalleryChobe1.png",
     gallery: [""],
     priceFrom: 1450,
     duration: "3 Days",
@@ -349,7 +327,7 @@ export const multiDayTours = [
     ],
     title: "Cape Town, Kruger, Vic Falls and Chobe",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/HwangeGallery3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/5VCljg9l7tILiGhXrW5Buk/237a727f1bf919d67936754b2525d128/GalleryVictoriaFalls4.png",
     priceFrom: 4800,
     duration: "5 Days",
     location: "South Africa, Zimbabwe & Botswana",
@@ -397,7 +375,7 @@ export const multiDayTours = [
     ],
     title: "Hwange National Park, Victoria Falls, Chobe and Nata",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery4.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/AIkK0tVlU4GbbdN6cwrnr/2adc78f3071b9c033efb74707456f62c/NataGallery1.png",
     gallery: [""],
     priceFrom: 2500,
     duration: "4 Days",
@@ -444,7 +422,7 @@ export const multiDayTours = [
     ],
     title: "Hwange National Park, Victoria Falls, Chobe and Okavango Delta",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/okavango-scaled.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/1R9OJpqR4mk1P2fyMXeU8B/2ec9200fd4ce2f9e37aab50393e4a8f0/GalleryOkavango3.png",
     priceFrom: 4800,
     duration: "6 Days",
     location: "Zimbabwe & Botswana",
@@ -491,7 +469,7 @@ export const packages = [
     destinationIds: ["victoria-falls", "zambezi-river"],
     title: "Victoria Falls Tour, Lunch and Sunset Cruise",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/05/IMG-20250623-WA0029.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/spG3iOGN63nYwNDcZlZpu/832e47b67bc64ac635b5398d1b41299e/GalleryGuidedTour8.jpeg",
     priceFrom: 120,
     duration: "Full Day",
     location: "Victoria Falls",
@@ -529,7 +507,7 @@ export const packages = [
     destinationIds: ["victoria-falls"],
     title: "AM Bamba Tram, Falls Tour and Boma",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Bamba-Tram_2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5k8EVYL2BBOaQLZZiqK7Cz/0927d20ffb8cd11b4edd3a6a2cb29d79/BambaHero.png",
     priceFrom: 200,
     duration: "Full Day",
     location: "Victoria Falls",
@@ -564,7 +542,7 @@ export const packages = [
     destinationIds: "victoria-falls",
     title: "AM Safari Drive, Helicopter Flight and Boma Dinner",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/Game-Drives.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7djINnZLroovFqZSJSuFUH/2fd0fa9cf92466d225eb7a24b2edda35/GameDriveHero.jpg",
     priceFrom: 365,
     duration: "Full Day",
     location: "Victoria Falls",
@@ -599,7 +577,7 @@ export const packages = [
     destinationIds: ["victoria-falls", "zambezi-river"],
     title: "Lion/Elephant Walk, Helicopter Flight and Sunset Cruise",
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/05/583051098_829236743146707_772401892647147049_n.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/482Bqbefg8l6ksUuv7r3va/1b56f73b63806583e180eb6d1fb88c2c/ElephantWalkHero.jpg",
     priceFrom: 450,
     duration: "Full Day",
     location: "Victoria Falls",
