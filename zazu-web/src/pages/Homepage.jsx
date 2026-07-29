@@ -12,8 +12,8 @@ function Homepage() {
   return (
     <>
       <SEO
-        title="Home"
-        description="Zazu Adventures home page featuring Victoria Falls."
+        title="Zimbabwe Tours, Safari Packages & Travel Experiences"
+        description="Plan Victoria Falls safaris, day trips, and custom Zimbabwe adventures with Zazu Adventures."
         keywords="Zazu Adventures, home, Victoria Falls, Mosi Oa Tunya"
       />
 

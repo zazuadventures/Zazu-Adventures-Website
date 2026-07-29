@@ -21,24 +21,20 @@ function Blog() {
           image={blogHeroImage}
           align="center"
           minHeightClassName="min-h-[72vh]"
-          primaryAction={{ label: "Plan a Trip", href: "/contact" }}
-          secondaryAction={{ label: "Browse Tours", href: "/tours" }}
         />
 
         <section className="mx-auto max-w-6xl px-6 py-16">
-          <div className="mb-8 max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.35em] text-[#C29B5A]">
-              Featured Articles
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold text-[#203A4A] sm:text-4xl">
-              Read before you travel
+          {/* Header */}
+          <div className="mb-8 max-w-2xl text-left">
+            <h2 className="mt-2 text-xl font-semibold text-[#333333]">
+              {heading}
             </h2>
-            <p className="mt-4 text-base leading-7 text-slate-600">
-              These quick guides cover the common questions travelers ask before
-              visiting the region, and they pair well with our tours and travel services.
-            </p>
+            {subtitle && (
+              <p className="mt-2 text-gray-600 text-sm leading-relaxed max-w-xl">
+                {subtitle}
+              </p>
+            )}
           </div>
-
           <div className="grid gap-6 md:grid-cols-2">
             {blogPosts.map((post) => (
               <article
@@ -95,8 +91,9 @@ function Blog() {
                 Let us build the trip around the advice
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
-                If you want tailored advice, the fastest way to get a useful answer is to
-                tell us your travel dates, group size, and the places you want to cover.
+                If you want tailored advice, the fastest way to get a useful
+                answer is to tell us your travel dates, group size, and the
+                places you want to cover.
               </p>
             </div>
 

@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Navigate, Routes, Route } from "react-router-dom";
 
 import MainLayout from "../layouts/MainLayout";
 import Homepage from "../pages/Homepage";
@@ -24,7 +24,8 @@ function AppRoutes() {
         <Route path="/tours/:slug" element={<TourDetails />} />
         <Route path="/experiences" element={<Experiences />} />
         <Route path="/experiences/:slug" element={<ExperienceRedirect />} />
-        <Route path="/travel-guide" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/travel-guide" element={<Navigate replace to="/blog" />} />
         <Route path="/travel-services" element={<TravelServices />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />

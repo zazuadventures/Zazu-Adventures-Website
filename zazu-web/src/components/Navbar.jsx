@@ -8,7 +8,7 @@ const FALLBACK_MENU_ITEMS = [
   { label: "Home", href: "/" },
   { label: "Tours", href: "/tours" },
   { label: "Travel Services", href: "/travel-services" },
-  { label: "Blog", href: "/travel-guide" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];

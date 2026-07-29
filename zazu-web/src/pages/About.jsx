@@ -10,7 +10,7 @@ function About() {
       <SimplePage
         title="About"
         heading="About"
-        description="Zazu Adventures about page with a basic SEO foundation."
+        description="Meet Zazu Adventures and learn how we plan tailored Zimbabwe safari experiences, tours, and cross-border adventures."
         keywords="Zazu Adventures, about"
         image="https://images.ctfassets.net/ht2d038ql6u5/2YtkiP0TBLd3j0kccVhk80/2d8b481aed35b809a6ee1aa93170ff17/ToursHero.png"
         eyebrow="About Us"
