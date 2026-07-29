@@ -78,16 +78,6 @@ function TourDetails() {
   const gallery = tour.gallery?.length
     ? tour.gallery
     : Array.from({ length: 8 }, () => tour.image);
-  const galleryLayout = [
-    "row-span-1",
-    "row-span-2",
-    "row-span-1",
-    "row-span-2",
-    "row-span-2",
-    "row-span-2",
-    "row-span-1",
-    "row-span-1",
-  ];
 
   const formatItineraryItem = (item) => {
     const separatorIndex = item.indexOf(":");
@@ -266,11 +256,11 @@ function TourDetails() {
         >
           <h2 className="text-2xl font-semibold text-[#111111]">Gallery</h2>
 
-          <div className="mt-8 grid auto-rows-[220px] grid-cols-2 gap-5 md:grid-cols-3">
+          <div className="mt-8 grid grid-cols-2 gap-5 md:grid-cols-3">
             {gallery.map((image, index) => (
               <figure
                 key={index}
-                className={`overflow-hidden rounded-3xl ${galleryLayout[index]}`}
+                className="overflow-hidden rounded-3xl aspect-[4/3]"
               >
                 <img
                   src={image}

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { getSiteSettings } from "../services/siteSettings";
 import { DEFAULT_LOGO_URL } from "../lib/branding";
 import { Link, NavLink } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { dayTours, getTourPath } from "../data/tourData";
 
 const FALLBACK_MENU_ITEMS = [
   { label: "Home", href: "/" },
@@ -27,6 +28,8 @@ function normalizeNavigationItem(item) {
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState(null);
+  const [openMobileDropdown, setOpenMobileDropdown] = useState(null);
 
   const [settings, setSettings] = useState(null);
 
@@ -77,6 +80,28 @@ const Navbar = () => {
     .sort((a, b) => a.order - b.order)
     .slice(0, 6);
 
+  const featuredActivitySlugs = [
+    "guided-tour-victoria-falls",
+    "helicopter-flight",
+    "zambezi-boat-cruise",
+    "boma-dinner-drum-show",
+    "chobe-day-trip",
+  ];
+
+  const featuredActivities = featuredActivitySlugs
+    .map((slug) => dayTours.find((tour) => tour.slug === slug))
+    .filter(Boolean)
+    .map((tour) => ({
+      label: tour.title,
+      href: getTourPath(tour.slug),
+    }));
+
+  const toursDropdownItems = [
+    { label: "All Tours", href: "/tours" },
+    { label: "All Experiences", href: "/experiences" },
+    ...featuredActivities,
+  ];
+
   const desktopLinkClasses = ({ isActive }) =>
     [
       "relative pb-1 text-sm font-medium transition-colors duration-300 after:absolute after:left-0 after:bottom-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100",
@@ -96,8 +121,77 @@ const Navbar = () => {
       .filter(Boolean)
       .join(" ");
 
+  const closeMenus = () => {
+    setIsOpen(false);
+    setOpenDropdown(null);
+    setOpenMobileDropdown(null);
+  };
+
+  const isToursMenuItem = (item) => item.href === "/tours";
+
   const renderMenuLink = (item, key) => {
     const isExternal = /^https?:\/\//i.test(item.href);
+
+    if (isToursMenuItem(item)) {
+      const isOpenDropdown = openDropdown === key;
+
+      return (
+        <div
+          key={key}
+          className="relative"
+          onMouseEnter={() => setOpenDropdown(key)}
+          onMouseLeave={() => setOpenDropdown(null)}
+        >
+          <button
+            type="button"
+            onClick={() =>
+              setOpenDropdown((current) => (current === key ? null : key))
+            }
+            className={`inline-flex items-center gap-2 ${desktopLinkClasses({ isActive: false })}`}
+            aria-expanded={isOpenDropdown}
+            aria-haspopup="menu"
+          >
+            <span>{item.label}</span>
+            <ChevronDown
+              className={`h-4 w-4 transition-transform duration-300 ${
+                isOpenDropdown ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+
+          <div
+            className={`absolute left-0 top-full z-50 pt-4 transition-all duration-200 ${
+              isOpenDropdown
+                ? "pointer-events-auto translate-y-0 opacity-100"
+                : "pointer-events-none -translate-y-2 opacity-0"
+            }`}
+          >
+            <div className="w-72 overflow-hidden rounded-2xl border border-[#203A4A]/10 bg-white p-2 shadow-[0_20px_50px_rgba(32,58,74,0.12)]">
+              {toursDropdownItems.map((dropdownItem) => (
+                <NavLink
+                  key={dropdownItem.href}
+                  to={dropdownItem.href}
+                  end={dropdownItem.href === "/"}
+                  onClick={() => setOpenDropdown(null)}
+                  className={({ isActive }) =>
+                    [
+                      "block rounded-xl px-4 py-3 text-sm transition-colors duration-200",
+                      isActive
+                        ? "bg-[#203A4A] text-white"
+                        : "text-[#333333] hover:bg-[#F4EFE7] hover:text-[#203A4A]",
+                    ]
+                      .filter(Boolean)
+                      .join(" ")
+                  }
+                >
+                  {dropdownItem.label}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+        </div>
+      );
+    }
 
     if (isExternal || item.openInNewTab) {
       return (
@@ -158,8 +252,8 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-10">
-            {menuItems.map((item) => renderMenuLink(item, `${item.label}-${item.href}`))}
-          </div>
+        {menuItems.map((item) => renderMenuLink(item, `${item.label}-${item.href}`))}
+      </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -224,6 +318,62 @@ const Navbar = () => {
                 const number = String(index + 1).padStart(2, "0");
                 const isExternal = /^https?:\/\//i.test(item.href);
 
+                if (isToursMenuItem(item)) {
+                  const isOpenTours = openMobileDropdown === item.href;
+
+                  return (
+                    <div key={`${item.label}-${item.href}`} className="border-b border-[#333333]/10">
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setOpenMobileDropdown((current) =>
+                            current === item.href ? null : item.href,
+                          )
+                        }
+                        className="group flex w-full items-center justify-between gap-5 py-6 text-left transition-all duration-300 hover:pl-3"
+                      >
+                        <div className="flex items-center gap-5">
+                          <span className="text-xs font-semibold text-[#333333]/50">
+                            {number}
+                          </span>
+                          <span className="text-2xl font-semibold text-[#333333] transition-colors duration-300 group-hover:text-[#C29B5A] sm:text-4xl">
+                            {item.label}
+                          </span>
+                        </div>
+
+                        <ChevronDown
+                          className={`h-6 w-6 text-[#333333] transition-transform duration-300 ${
+                            isOpenTours ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+
+                      <div
+                        className={`grid overflow-hidden transition-all duration-300 ${
+                          isOpenTours
+                            ? "grid-rows-[1fr] opacity-100"
+                            : "grid-rows-[0fr] opacity-0"
+                        }`}
+                      >
+                        <div className="overflow-hidden pl-10 pb-6">
+                          <div className="mb-4 flex flex-col gap-2 border-l border-[#203A4A]/10 pl-5">
+                            {toursDropdownItems.map((dropdownItem) => (
+                              <NavLink
+                                key={dropdownItem.href}
+                                to={dropdownItem.href}
+                                onClick={closeMenus}
+                                className="text-sm font-medium text-[#333333] transition-colors duration-200 hover:text-[#C29B5A]"
+                              >
+                                {dropdownItem.label}
+                              </NavLink>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
                 if (isExternal || item.openInNewTab) {
                   return (
                     <a
@@ -231,12 +381,12 @@ const Navbar = () => {
                       href={item.href}
                       target={item.openInNewTab ? "_blank" : undefined}
                       rel={item.openInNewTab ? "noreferrer" : undefined}
-                      onClick={() => setIsOpen(false)}
+                      onClick={closeMenus}
                       className={mobileLinkClasses({ isActive: false })}
-                    >
-                      <span className="text-xs font-semibold text-[#333333]/50">
-                        {number}
-                      </span>
+                      >
+                        <span className="text-xs font-semibold text-[#333333]/50">
+                          {number}
+                        </span>
 
                       <span className="text-2xl font-semibold text-[#333333] transition-colors duration-300 group-hover:text-[#C29B5A] sm:text-4xl">
                         {item.label}
@@ -250,7 +400,7 @@ const Navbar = () => {
                     key={`${item.label}-${item.href}`}
                     to={item.href}
                     end={item.href === "/"}
-                    onClick={() => setIsOpen(false)}
+                    onClick={closeMenus}
                     className={mobileLinkClasses}
                   >
                     <span className="text-xs font-semibold text-[#333333]/50">
