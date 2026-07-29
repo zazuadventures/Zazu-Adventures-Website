@@ -15,6 +15,7 @@ function Homepage() {
         title="Zimbabwe Tours, Safari Packages & Travel Experiences"
         description="Plan Victoria Falls safaris, day trips, and custom Zimbabwe adventures with Zazu Adventures."
         keywords="Zazu Adventures, home, Victoria Falls, Mosi Oa Tunya"
+        image="https://www.zazuadventures.com/og-image.jpg"
       />
 
       <Hero />

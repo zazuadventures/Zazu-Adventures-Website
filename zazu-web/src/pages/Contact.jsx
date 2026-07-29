@@ -3,7 +3,7 @@ import SimplePage from "../components/SimplePage";
 function Contact() {
   return (
     <SimplePage
-      title="Contact"
+      title="Contact Zazu Adventures"
       heading="Contact"
       description="Contact Zazu Adventures to plan your Victoria Falls safari, request a custom itinerary, or ask about tour availability."
       keywords="Zazu Adventures, contact"

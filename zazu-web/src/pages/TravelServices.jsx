@@ -3,7 +3,7 @@ import SimplePage from "../components/SimplePage";
 function TravelServices() {
   return (
     <SimplePage
-      title="Travel Services"
+      title="Travel Planning Services"
       heading="Travel Services"
       description="Explore travel planning support, transfers, custom itineraries, and booking help for Zimbabwe and Southern Africa trips."
       keywords="Zazu Adventures, travel services"

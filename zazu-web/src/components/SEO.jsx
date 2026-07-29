@@ -1,12 +1,19 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 const SEO = ({
   title,
   description = "Zazu Adventures - simple travel experiences, tours, and trip planning.",
   keywords,
   canonical,
+  robots = "index,follow",
+  image = "https://www.zazuadventures.com/og-image.jpg",
+  type = "website",
 }) => {
   const fullTitle = title ? `${title} | Zazu Adventures` : "Zazu Adventures";
+  const location = useLocation();
+  const defaultCanonical = `https://www.zazuadventures.com${location.pathname}`;
+  const resolvedCanonical = canonical || defaultCanonical;
 
   return (
     <Helmet>
@@ -19,7 +26,7 @@ const SEO = ({
 
       <meta
         name="robots"
-        content="index,follow"
+        content={robots}
       />
 
       {keywords && (
@@ -38,16 +45,39 @@ const SEO = ({
         content={description}
       />
       <meta
+        property="og:image"
+        content={image}
+      />
+      <meta
         property="og:type"
-        content="website"
+        content={type}
+      />
+      <meta
+        property="og:url"
+        content={resolvedCanonical}
       />
 
-      {canonical ? (
-        <link
-          rel="canonical"
-          href={canonical}
-        />
-      ) : null}
+      <meta
+        name="twitter:card"
+        content="summary_large_image"
+      />
+      <meta
+        name="twitter:title"
+        content={fullTitle}
+      />
+      <meta
+        name="twitter:description"
+        content={description}
+      />
+      <meta
+        name="twitter:image"
+        content={image}
+      />
+
+      <link
+        rel="canonical"
+        href={resolvedCanonical}
+      />
     </Helmet>
   );
 };

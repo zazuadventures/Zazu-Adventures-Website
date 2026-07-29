@@ -7,8 +7,8 @@ function Tours() {
   return (
     <>
       <SEO
-        title="Tours"
-        description="Browse day trips, multi-day tours, and curated packages with filters."
+        title="Zimbabwe Tours & Safari Packages"
+        description="Browse day trips, multi-day tours, and curated safari packages from Victoria Falls and beyond."
         keywords="Zazu Adventures, tours, day trips, multi-day tours, packages"
       />
 

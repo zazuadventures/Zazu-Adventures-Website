@@ -7,8 +7,8 @@ function Experiences() {
   return (
     <>
       <SEO
-        title="Experiences"
-        description="Browse all Zazu Adventures experiences in one curated filterable collection."
+        title="Safari Experiences & Day Trips"
+        description="Browse all Zazu Adventures safari experiences, day trips, and curated adventure packages in one place."
         keywords="Zazu Adventures, experiences, tours, safari, Victoria Falls"
       />
 

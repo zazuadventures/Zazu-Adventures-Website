@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <SimplePage
-        title="About"
+        title="About Zazu Adventures"
         heading="About"
         description="Meet Zazu Adventures and learn how we plan tailored Zimbabwe safari experiences, tours, and cross-border adventures."
         keywords="Zazu Adventures, about"

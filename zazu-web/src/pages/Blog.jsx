@@ -5,11 +5,15 @@ import { blogPosts } from "../data/blogPosts";
 import blogHeroImage from "../assets/images/VictoriaFallsGallery1.png";
 
 function Blog() {
+  const heading = "Featured Articles";
+  const subtitle =
+    "Practical travel advice, packing tips, and destination ideas for Victoria Falls and Southern Africa.";
+
   return (
     <>
       <SEO
-        title="Travel Guide"
-        description="Helpful travel guides, packing tips, and planning advice for Victoria Falls and Southern Africa."
+        title="Travel Guides & Planning Tips"
+        description="Helpful travel guides, packing tips, and planning advice for Victoria Falls, Zimbabwe, and Southern Africa."
         keywords="Victoria Falls travel guide, Zimbabwe safari tips, Zazu Adventures blog"
       />
 
@@ -24,7 +28,6 @@ function Blog() {
         />
 
         <section className="mx-auto max-w-6xl px-6 py-16">
-          {/* Header */}
           <div className="mb-8 max-w-2xl text-left">
             <h2 className="mt-2 text-xl font-semibold text-[#333333]">
               {heading}

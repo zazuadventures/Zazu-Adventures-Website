@@ -41,6 +41,7 @@ function TourDetails() {
         <SEO
           title="Tour not found"
           description="The requested tour page could not be found."
+          robots="noindex,nofollow"
         />
 
         <main className="mx-auto w-full max-w-3xl px-6 pt-28 pb-16 sm:pt-32">
@@ -126,6 +127,7 @@ function TourDetails() {
         title={tour.title}
         description={tour.summary}
         keywords={`Zazu Adventures, ${tour.title}, ${tour.location}`}
+        image={tour.image}
       />
 
       <main className="w-full">

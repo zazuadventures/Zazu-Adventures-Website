@@ -38,6 +38,7 @@ function DestinationDetails() {
         <SEO
           title="Destination not found"
           description="The requested destination page could not be found."
+          robots="noindex,nofollow"
         />
 
         <main className="mx-auto w-full max-w-3xl px-6 pt-28 pb-16 sm:pt-32">
@@ -72,6 +73,7 @@ function DestinationDetails() {
         title={destination.title}
         description={destination.summary}
         keywords={`Zazu Adventures, ${destination.title}, ${destination.region}`}
+        image={coverImage}
       />
 
       <main className="w-full">

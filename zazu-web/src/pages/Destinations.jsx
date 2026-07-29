@@ -8,8 +8,8 @@ function Destinations() {
   return (
     <>
       <SEO
-        title="Destinations"
-        description="Browse the destinations that shape each Zazu Adventures itinerary."
+        title="Zimbabwe Destinations"
+        description="Browse the Zimbabwe and Southern Africa destinations that shape each Zazu Adventures itinerary."
         keywords="Zazu Adventures, destinations, Victoria Falls, Hwange, Chobe, Okavango"
       />
 
