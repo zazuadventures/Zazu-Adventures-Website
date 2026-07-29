@@ -3,6 +3,7 @@ import { useState } from "react";
 import { CheckCircle2 } from "lucide-react";
 import ActivityCard from "../components/ActivityCard";
 import SEO from "../components/SEO";
+import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
 import { getDestinationById } from "../lib/destinationData";
 import { getToursByDestination } from "../data/tourData";
@@ -39,6 +40,11 @@ function DestinationDetails() {
           title="Destination not found"
           description="The requested destination page could not be found."
           robots="noindex,nofollow"
+          breadcrumbs={[
+            { label: "Home", href: "/" },
+            { label: "Destinations", href: "/destinations" },
+            { label: "Destination not found" },
+          ]}
         />
 
         <main className="mx-auto w-full max-w-3xl px-6 pt-28 pb-16 sm:pt-32">
@@ -74,6 +80,11 @@ function DestinationDetails() {
         description={destination.summary}
         keywords={`Zazu Adventures, ${destination.title}, ${destination.region}`}
         image={coverImage}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Destinations", href: "/destinations" },
+          { label: destination.title },
+        ]}
       />
 
       <main className="w-full">
@@ -83,6 +94,14 @@ function DestinationDetails() {
           description={destination.summary}
           image={coverImage}
           minHeightClassName="min-h-[72vh]"
+        />
+
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Destinations", href: "/destinations" },
+            { label: destination.title },
+          ]}
         />
 
         {/* Section Navigation */}

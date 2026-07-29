@@ -9,11 +9,38 @@ const SEO = ({
   robots = "index,follow",
   image = "https://www.zazuadventures.com/og-image.jpg",
   type = "website",
+  breadcrumbs,
+  structuredData,
 }) => {
   const fullTitle = title ? `${title} | Zazu Adventures` : "Zazu Adventures";
   const location = useLocation();
   const defaultCanonical = `https://www.zazuadventures.com${location.pathname}`;
   const resolvedCanonical = canonical || defaultCanonical;
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Zazu Adventures",
+    url: "https://www.zazuadventures.com",
+  };
+
+  const breadcrumbSchema = breadcrumbs?.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: breadcrumbs.map((item, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.label,
+          item: item.href ? `https://www.zazuadventures.com${item.href}` : resolvedCanonical,
+        })),
+      }
+    : null;
+
+  const extraSchemas = structuredData
+    ? Array.isArray(structuredData)
+      ? structuredData
+      : [structuredData]
+    : [];
 
   return (
     <Helmet>
@@ -78,6 +105,21 @@ const SEO = ({
         rel="canonical"
         href={resolvedCanonical}
       />
+
+      <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
+
+      {breadcrumbSchema ? (
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      ) : null}
+
+      {extraSchemas.map((schema, index) => (
+        <script
+          key={`${schema["@type"] ?? "schema"}-${index}`}
+          type="application/ld+json"
+        >
+          {JSON.stringify(schema)}
+        </script>
+      ))}
     </Helmet>
   );
 };

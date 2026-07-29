@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import SEO from "../components/SEO";
+import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
 import { blogPosts } from "../data/blogPosts";
 import blogHeroImage from "../assets/images/VictoriaFallsGallery1.png";
@@ -15,6 +16,10 @@ function Blog() {
         title="Travel Guides & Planning Tips"
         description="Helpful travel guides, packing tips, and planning advice for Victoria Falls, Zimbabwe, and Southern Africa."
         keywords="Victoria Falls travel guide, Zimbabwe safari tips, Zazu Adventures blog"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Blog" },
+        ]}
       />
 
       <main className="bg-[#F7F4EE]">
@@ -25,6 +30,13 @@ function Blog() {
           image={blogHeroImage}
           align="center"
           minHeightClassName="min-h-[72vh]"
+        />
+
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Blog" },
+          ]}
         />
 
         <section className="mx-auto max-w-6xl px-6 py-16">

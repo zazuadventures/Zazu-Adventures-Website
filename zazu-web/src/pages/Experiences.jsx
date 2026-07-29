@@ -1,4 +1,5 @@
 import SEO from "../components/SEO";
+import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
 import TourCatalog from "../components/TourCatalog";
 import { allTours } from "../data/tourData";
@@ -10,6 +11,10 @@ function Experiences() {
         title="Safari Experiences & Day Trips"
         description="Browse all Zazu Adventures safari experiences, day trips, and curated adventure packages in one place."
         keywords="Zazu Adventures, experiences, tours, safari, Victoria Falls"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Experiences" },
+        ]}
       />
 
       <main className="w-full">
@@ -19,6 +24,13 @@ function Experiences() {
           description="From thrilling adventures and wildlife encounters to sunset cruises and cultural journeys, find the perfect experience for your next trip."
           image="https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery5.png"
           minHeightClassName="min-h-[72vh]"
+        />
+
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Experiences" },
+          ]}
         />
 
         <TourCatalog

@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Sparkles } from "lucide-react";
 import SEO from "../components/SEO";
+import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
 import { destinations, getDestinationPath } from "../lib/destinationData";
 
@@ -11,6 +12,10 @@ function Destinations() {
         title="Zimbabwe Destinations"
         description="Browse the Zimbabwe and Southern Africa destinations that shape each Zazu Adventures itinerary."
         keywords="Zazu Adventures, destinations, Victoria Falls, Hwange, Chobe, Okavango"
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Destinations" },
+        ]}
       />
 
       <main className="w-full">
@@ -20,6 +25,13 @@ function Destinations() {
           description="Each destination is structured as a relationship hub for the tours that actually belong there, so the page stays useful for browsing and booking."
           image="https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery1.png"
           minHeightClassName="min-h-[72vh]"
+        />
+
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Destinations" },
+          ]}
         />
 
         <section className="mx-auto w-full max-w-7xl px-6 py-16">

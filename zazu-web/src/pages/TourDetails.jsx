@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowRight, CheckCircle2, HelpCircle } from "lucide-react";
 import SEO from "../components/SEO";
+import Breadcrumbs from "../components/Breadcrumbs";
 import PageHero from "../components/PageHero";
 import { getTourBySlug } from "../data/tourData";
 
@@ -42,6 +43,11 @@ function TourDetails() {
           title="Tour not found"
           description="The requested tour page could not be found."
           robots="noindex,nofollow"
+          breadcrumbs={[
+            { label: "Home", href: "/" },
+            { label: "Tours", href: "/tours" },
+            { label: "Tour not found" },
+          ]}
         />
 
         <main className="mx-auto w-full max-w-3xl px-6 pt-28 pb-16 sm:pt-32">
@@ -128,6 +134,11 @@ function TourDetails() {
         description={tour.summary}
         keywords={`Zazu Adventures, ${tour.title}, ${tour.location}`}
         image={tour.image}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: "Tours", href: "/tours" },
+          { label: tour.title },
+        ]}
       />
 
       <main className="w-full">
@@ -137,6 +148,14 @@ function TourDetails() {
           description={tour.summary}
           image={tour.image}
           minHeightClassName="min-h-[72vh]"
+        />
+
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Tours", href: "/tours" },
+            { label: tour.title },
+          ]}
         />
 
         <section className="mx-auto w-full max-w-6xl px-6 pt-16">
