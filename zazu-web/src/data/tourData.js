@@ -78,9 +78,14 @@ export const dayTours = [
     destinationIds: ["chobe-national-park", "victoria-falls"],
     title: "Chobe Day Trip",
 
-    image: "https://images.ctfassets.net/ht2d038ql6u5/2AqECgcq6EOdnXMf0hRtPi/aaca39a2dee52d6361c6b26d322a0537/GalleryChobe4.png",
+    image:
+      "https://images.ctfassets.net/ht2d038ql6u5/3Qsf4Y77z1AJ4Kgx3Y17T9/361106d9762062f52b0146fd1cdc4c28/GalleryChobe2.png",
 
     gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/3Qsf4Y77z1AJ4Kgx3Y17T9/361106d9762062f52b0146fd1cdc4c28/GalleryChobe2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/32jv9B6Ey6BMIjxD9usjJm/283fd4820902d425e71732b523f62e02/GalleryChobe3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/2AqECgcq6EOdnXMf0hRtPi/aaca39a2dee52d6361c6b26d322a0537/GalleryChobe4.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/1moJS9sG0MvQy9iSRMYa0P/2f7b41f3b0587f481f8cd8b6cc1d8c46/GalleryChobe1.png",
     ],
 
     priceFrom: 220,
@@ -249,7 +254,6 @@ export const dayTours = [
       "https://images.ctfassets.net/ht2d038ql6u5/5KLderVcpTvJ98GIcEwaCY/cc7e11b8e02049013598d9fe4be36d02/GalleryBoma5.jpg",
       "https://images.ctfassets.net/ht2d038ql6u5/7I9Sq0yCFW3KFDhKRdV9h8/2108c481916ebc8ce50687f0d420cf45/GalleryBoma3.JPG",
       "https://images.ctfassets.net/ht2d038ql6u5/2H1T1D0Zch5X5RkgPuJOId/a24b1a9cd36f6825dcf85688747b2161/GalleryBoma4.jpg",
-
     ],
 
     priceFrom: 80,
@@ -307,7 +311,8 @@ export const dayTours = [
     image:
       "https://images.ctfassets.net/ht2d038ql6u5/3V7j14rpVFyzXKoN4pAhWu/317fa1beed646fa46cf1716e28746bf7/AroundZimHero.png",
 
-    gallery: ["https://images.ctfassets.net/ht2d038ql6u5/2v0mqqw7qhyb1OhyrWcbmJ/e034ca8e4646d2693bdb5907cdf12864/GalleryAroundZim2.png",
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/2v0mqqw7qhyb1OhyrWcbmJ/e034ca8e4646d2693bdb5907cdf12864/GalleryAroundZim2.png",
       "https://images.ctfassets.net/ht2d038ql6u5/1lnrkPKdXaC5F1EfRUPMZ8/6967aba80c137ac29e70289fd09cfad9/GalleryAroundZim4.png",
       "https://images.ctfassets.net/ht2d038ql6u5/1uxmMMz3v5ebdzuwfkO3uZ/14425e7587ff06bf346bb8a7f22caf72/GalleryAroundZim3.png",
       "https://images.ctfassets.net/ht2d038ql6u5/7gpFsL5gAey2Wi758SIzSk/fef641e51711b24cdb26f253e1400b1c/GalleryAroundZim6.png",
@@ -363,14 +368,19 @@ export const multiDayTours = [
     slug: "victoria-falls-chobe",
     destinationIds: ["victoria-falls", "chobe-national-park", "zambezi-river"],
     title: "Victoria Falls, Chobe",
-    image: "https://images.ctfassets.net/ht2d038ql6u5/1moJS9sG0MvQy9iSRMYa0P/2f7b41f3b0587f481f8cd8b6cc1d8c46/GalleryChobe1.png",
+    image:
+      "https://images.ctfassets.net/ht2d038ql6u5/1moJS9sG0MvQy9iSRMYa0P/2f7b41f3b0587f481f8cd8b6cc1d8c46/GalleryChobe1.png",
     gallery: [
-      "",
+      "https://images.ctfassets.net/ht2d038ql6u5/3Qsf4Y77z1AJ4Kgx3Y17T9/361106d9762062f52b0146fd1cdc4c28/GalleryChobe2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/32jv9B6Ey6BMIjxD9usjJm/283fd4820902d425e71732b523f62e02/GalleryChobe3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/2AqECgcq6EOdnXMf0hRtPi/aaca39a2dee52d6361c6b26d322a0537/GalleryChobe4.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/1moJS9sG0MvQy9iSRMYa0P/2f7b41f3b0587f481f8cd8b6cc1d8c46/GalleryChobe1.png",
       "https://images.ctfassets.net/ht2d038ql6u5/3JE0ucZD4IuFyCzmIZYu3h/73009eae9f91c33c8cefa408309cde1a/GalleryGuidedTour6.jpg",
       "https://images.ctfassets.net/ht2d038ql6u5/4HmZynacYaVamABquLQ4wG/94c0337bb8e0cc6971d732a30e0d5d6e/GalleryGuidedTour3.jpg",
       "https://images.ctfassets.net/ht2d038ql6u5/2CYSRBQw8SNT0FAtcWgE09/98a00ace1b4a26e5e62f85636e89d9f0/GalleryGuidedTour1.jpg",
       "https://images.ctfassets.net/ht2d038ql6u5/7AiawNsJTC26Kp22hTa8MD/44a01c21a0b36c7a0597974403bef205/GalleryGuidedTour7.jpg",
-      "https://images.ctfassets.net/ht2d038ql6u5/spG3iOGN63nYwNDcZlZpu/832e47b67bc64ac635b5398d1b41299e/GalleryGuidedTour8.jpeg"],
+      "https://images.ctfassets.net/ht2d038ql6u5/spG3iOGN63nYwNDcZlZpu/832e47b67bc64ac635b5398d1b41299e/GalleryGuidedTour8.jpeg",
+    ],
     priceFrom: 1450,
     duration: "3 Days",
     location: "Victoria Falls & Chobe",
@@ -413,6 +423,7 @@ export const multiDayTours = [
     title: "Cape Town, Kruger, Vic Falls and Chobe",
     image:
       "https://images.ctfassets.net/ht2d038ql6u5/5VCljg9l7tILiGhXrW5Buk/237a727f1bf919d67936754b2525d128/GalleryVictoriaFalls4.png",
+    gallery: [],
     priceFrom: 4800,
     duration: "5 Days",
     location: "South Africa, Zimbabwe & Botswana",
@@ -555,6 +566,14 @@ export const packages = [
     title: "Victoria Falls Tour, Lunch and Sunset Cruise",
     image:
       "https://images.ctfassets.net/ht2d038ql6u5/spG3iOGN63nYwNDcZlZpu/832e47b67bc64ac635b5398d1b41299e/GalleryGuidedTour8.jpeg",
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/79Tkf9g2XNKgCfgPUzh7Ad/a4e64d90095356323b115c90c18f25ac/GalleryGuidedTour2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/3JE0ucZD4IuFyCzmIZYu3h/73009eae9f91c33c8cefa408309cde1a/GalleryGuidedTour6.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/4HmZynacYaVamABquLQ4wG/94c0337bb8e0cc6971d732a30e0d5d6e/GalleryGuidedTour3.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/2CYSRBQw8SNT0FAtcWgE09/98a00ace1b4a26e5e62f85636e89d9f0/GalleryGuidedTour1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7AiawNsJTC26Kp22hTa8MD/44a01c21a0b36c7a0597974403bef205/GalleryGuidedTour7.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/spG3iOGN63nYwNDcZlZpu/832e47b67bc64ac635b5398d1b41299e/GalleryGuidedTour8.jpeg",
+    ],
     priceFrom: 120,
     duration: "Full Day",
     location: "Victoria Falls",
@@ -593,6 +612,19 @@ export const packages = [
     title: "AM Bamba Tram, Falls Tour and Boma",
     image:
       "https://images.ctfassets.net/ht2d038ql6u5/5k8EVYL2BBOaQLZZiqK7Cz/0927d20ffb8cd11b4edd3a6a2cb29d79/BambaHero.png",
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/6pNIj3SZtQ3ab5aoOlhkKT/ae5d26bd5be68494fd10e407b98a2b57/GalleryBamba6.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/50Dk5FaLg8CHJHQYAsw2Hb/0b20340736d832e2b7b5064c4e6e859b/GalleryBamba5.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/4R430wgKY1QVAbKdO1B6kh/bb34f586e957385fd85d3b1ab948ca72/GalleryBamba4.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/67YrgtdCYNFlEPufab8v91/e488ea0e37996391a9a1556a8ff52d31/GalleryBamba3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/2uVJvgv4k3DrKW1ojgpf71/4355c847aca2e05819caea84da1f6b3f/GalleryBamba2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/6UZGu3Gy5qcmV8QqgwVKM3/1a32f8636ecb746bc304b99d0b6976ba/GalleryBamba1.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7zNZexp2pqo09OWTiZIzQy/d8298c9ff37654f31b6066ed43768e3e/GalleryBoma2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/3lEmvkSlNIMRk9LDOz8tv0/54e9fd8688259a8ff0b26be57ae9511e/GalleryBoma1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5KLderVcpTvJ98GIcEwaCY/cc7e11b8e02049013598d9fe4be36d02/GalleryBoma5.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7I9Sq0yCFW3KFDhKRdV9h8/2108c481916ebc8ce50687f0d420cf45/GalleryBoma3.JPG",
+      "https://images.ctfassets.net/ht2d038ql6u5/2H1T1D0Zch5X5RkgPuJOId/a24b1a9cd36f6825dcf85688747b2161/GalleryBoma4.jpg",
+    ],
     priceFrom: 200,
     duration: "Full Day",
     location: "Victoria Falls",
@@ -628,6 +660,25 @@ export const packages = [
     title: "AM Safari Drive, Helicopter Flight and Boma Dinner",
     image:
       "https://images.ctfassets.net/ht2d038ql6u5/7djINnZLroovFqZSJSuFUH/2fd0fa9cf92466d225eb7a24b2edda35/GameDriveHero.jpg",
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/KjgeiYa3bmTxDX9tD5h2g/53b262a0c0f5e5a6358300456c981383/GalleryGameDrive3.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5aewoFk5ljl3Vl06M91p37/af0839a674e6cd550d27e567ca078814/GalleryGameDrive1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/MlqtZN4s97hbVnRrehmJU/c2bea2bc9a8f5228dcf4d3e5903b3864/GalleryGameDrive5.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/3CDLDVOQ5lHlFFrCmnzdcE/33572f2c5a85f51cab6ebc69fc9da1dd/GalleryGameDrive2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5dLLV8SSReyy4LUVkbIgPX/19a4006f42bbbf9fd7a47b1da39e3544/GalleryGameDrive4.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7vCOCATMhOMKvkhV8GldY5/2c86c61c1d564e1608e0ac4cd033ca1a/GalleryGameDrive6.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7zNZexp2pqo09OWTiZIzQy/d8298c9ff37654f31b6066ed43768e3e/GalleryBoma2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/3lEmvkSlNIMRk9LDOz8tv0/54e9fd8688259a8ff0b26be57ae9511e/GalleryBoma1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5KLderVcpTvJ98GIcEwaCY/cc7e11b8e02049013598d9fe4be36d02/GalleryBoma5.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7I9Sq0yCFW3KFDhKRdV9h8/2108c481916ebc8ce50687f0d420cf45/GalleryBoma3.JPG",
+      "https://images.ctfassets.net/ht2d038ql6u5/2H1T1D0Zch5X5RkgPuJOId/a24b1a9cd36f6825dcf85688747b2161/GalleryBoma4.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/2v0mqqw7qhyb1OhyrWcbmJ/e034ca8e4646d2693bdb5907cdf12864/GalleryAroundZim2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/1lnrkPKdXaC5F1EfRUPMZ8/6967aba80c137ac29e70289fd09cfad9/GalleryAroundZim4.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/1uxmMMz3v5ebdzuwfkO3uZ/14425e7587ff06bf346bb8a7f22caf72/GalleryAroundZim3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/7gpFsL5gAey2Wi758SIzSk/fef641e51711b24cdb26f253e1400b1c/GalleryAroundZim6.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/3WPc3aJcu9LxdSxB1Gykk2/ca53f1123478043e93c9eb1357c69841/GalleryAroundZim5.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/4GTilgMnSNiPNybZCupP2y/aef202dcc16d6644508be1fd59847e2b/GalleryAroundZim1.png",
+    ],
     priceFrom: 365,
     duration: "Full Day",
     location: "Victoria Falls",
@@ -663,6 +714,20 @@ export const packages = [
     title: "Lion/Elephant Walk, Helicopter Flight and Sunset Cruise",
     image:
       "https://images.ctfassets.net/ht2d038ql6u5/482Bqbefg8l6ksUuv7r3va/1b56f73b63806583e180eb6d1fb88c2c/ElephantWalkHero.jpg",
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/7l6NsQh1sBiZDsXLOtfFh3/c24741c9349a5bdaeca9c04afab076f3/GalleryHero3.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5A0yzTbY86dNtXxMQwLN4l/f3cf2edfa8cbbf7c652b7bcb76563e9e/GalleryHero2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/6yQNicvtc4Ua4OXv70RjAJ/c164ad7cddb1ff00fb40238fc6f280fd/GalleryHero1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/ybR2cnXEZmO84IQA4j4S5/c0d2ef0fc75c0c25aa377b3c1bb7d692/GalleryHero4.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/27w5OMiRlNVpGrrtKiveDg/9d685923f7897ca813d505d2516253dc/GalleryHero5.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/3faa65skhYs1zg1A2cLNtD/b0d4e6b34160ea616a55e53d0f699cfd/GalleryHero7.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/64CP9gQS7qI1zzjasKclH8/52a154e59e40bb2c6be33ab5c9e623ca/GalleryBoatCruise7.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/1x3l3zfgTKwQVm6yot6XdT/daf567888e221957c4b3569662c2d8f9/GalleryBoatCruise8.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/3Y920DfgMy4EJ9jGj7pvm/b3b302bb785879ddf5755c0c753fdb89/GalleryBoatCruise3.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/1iZuxFJ8fDE2NgAc2Sy9os/ea7c6c399c2e36026b87017794df1839/GalleryBoatCruise1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/22rZUabXCNt37cjwAX2ZGx/9e53ce2a3801399b0e0d8b704eea44c8/GalleryBoatCruise2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/70Au683j0WxjQXn5XGFtW4/5bda05f212486a4dc4480edc91aa86f3/GalleryBoatCruise4.jpg",
+    ],
     priceFrom: 450,
     duration: "Full Day",
     location: "Victoria Falls",
