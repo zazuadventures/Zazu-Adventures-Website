@@ -85,63 +85,6 @@ export const dayTours = [
     ],
   },
   {
-    id: "chobe-day-trip",
-    slug: "chobe-day-trip",
-    destinationIds: ["chobe-national-park", "victoria-falls"],
-    title: "Chobe Day Trip",
-
-    image:
-      "https://images.ctfassets.net/ht2d038ql6u5/6eE5F2BkGAbhfVzq1qUsOI/389884b398f2eaae08d5a6ffe735718c/ChobeHero.png",
-
-    gallery: [
-      "https://images.ctfassets.net/ht2d038ql6u5/1Uh9I8IyuBvOBZZBR24ysN/68af06a422da51b4d72a8299b04fa2c9/GalleryChobe1.png",
-      "https://images.ctfassets.net/ht2d038ql6u5/2ioeCBPvRREtg35tiiuUNz/e20e350dbd9d6da10f977b236280c5d2/GalleryChobe2.png",
-      "https://images.ctfassets.net/ht2d038ql6u5/5oZTS8sy0VQLuGaUUwqnyz/8b8feea029454c91bbd52ed624656b27/GalleryChobe3.png",
-      "https://images.ctfassets.net/ht2d038ql6u5/4DBrfqzgKyApT3xDh7Ji2S/686d3b1ee5bd123cf2fb127ea0d6a655/GalleryChobe4.png",
-      "https://images.ctfassets.net/ht2d038ql6u5/51efd15RAhzyVXAeJAyzDG/4e22718fb7a94df3559d0a92d4b565c1/GalleryChobe5.jpg",
-      "https://images.ctfassets.net/ht2d038ql6u5/6traOj8NplCbmK7lC8QvzG/7254dcc96050ba6e142c529307ae7252/GalleryChobe6.jpeg",
-      "https://images.ctfassets.net/ht2d038ql6u5/67mo1KImdkd76dQhQTYNv9/6afb6946a220a739acd1d8a543d85143/GalleryChobe7.jpg",
-      "https://images.ctfassets.net/ht2d038ql6u5/5jcH0zCY0V6ch7UPGwSkIx/34248d0a186e1e0f0df50896352ac085/GalleryChobe8.webp",
-    ],
-
-    priceFrom: 220,
-
-    duration: "Full Day",
-
-    location: "Chobe National Park, Botswana",
-
-    category: "Day Tour",
-
-    type: "day",
-
-    summary:
-      "Enjoy a full-day safari adventure to Chobe National Park, one of Botswana's premier wildlife destinations. Combine a game drive and a relaxing river safari with excellent chances of spotting elephants, buffalo, hippos, crocodiles, and a wide variety of birdlife.",
-
-    highlights: [
-      "Full-day safari experience in Chobe National Park",
-      "Game drive with expert local guides",
-      "Boat cruise on the Chobe River",
-      "Excellent elephant and wildlife viewing",
-      "Scenic cross-border day trip from Victoria Falls",
-    ],
-
-    includes: [
-      "Return transfers",
-      "Chobe National Park game drive",
-      "Chobe River boat cruise",
-      "Park entry fees",
-      "Professional safari guide",
-    ],
-
-    itinerary: [
-      "Early morning pick-up from your accommodation in Victoria Falls and transfer to the Botswana border.",
-      "Cross into Botswana and continue to Chobe National Park for a guided game drive.",
-      "Enjoy a buffet lunch at a selected lodge or restaurant, depending on the day plan.",
-      "Board a boat cruise on the Chobe River to watch wildlife from the water and enjoy the scenery.",
-      "Return to Victoria Falls in the afternoon or early evening after your safari day.",
-    ],
-  },
-  {
     id: "flight-of-angels",
     slug: "flight-of-angels",
     destinationIds: ["victoria-falls"],
@@ -1044,51 +987,60 @@ export const packages = [
     ],
   },
   {
-    id: "",
-    slug: "am-bamba-tram-falls-tour-boma",
-    destinationIds: ["victoria-falls"],
-    title: "AM Bamba Tram, Falls Tour and Boma",
+    id: "chobe-day-trip",
+    slug: "chobe-day-trip",
+    destinationIds: ["chobe-national-park", "victoria-falls"],
+    title: "Chobe Day Trip",
+
     image:
-      "https://images.ctfassets.net/ht2d038ql6u5/5k8EVYL2BBOaQLZZiqK7Cz/0927d20ffb8cd11b4edd3a6a2cb29d79/BambaHero.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/6eE5F2BkGAbhfVzq1qUsOI/389884b398f2eaae08d5a6ffe735718c/ChobeHero.png",
+
     gallery: [
-      "https://images.ctfassets.net/ht2d038ql6u5/6pNIj3SZtQ3ab5aoOlhkKT/ae5d26bd5be68494fd10e407b98a2b57/GalleryBamba6.png",
-      "https://images.ctfassets.net/ht2d038ql6u5/50Dk5FaLg8CHJHQYAsw2Hb/0b20340736d832e2b7b5064c4e6e859b/GalleryBamba5.jpeg",
-      "https://images.ctfassets.net/ht2d038ql6u5/4R430wgKY1QVAbKdO1B6kh/bb34f586e957385fd85d3b1ab948ca72/GalleryBamba4.jpeg",
-      "https://images.ctfassets.net/ht2d038ql6u5/67YrgtdCYNFlEPufab8v91/e488ea0e37996391a9a1556a8ff52d31/GalleryBamba3.png",
-      "https://images.ctfassets.net/ht2d038ql6u5/2uVJvgv4k3DrKW1ojgpf71/4355c847aca2e05819caea84da1f6b3f/GalleryBamba2.png",
-      "https://images.ctfassets.net/ht2d038ql6u5/6UZGu3Gy5qcmV8QqgwVKM3/1a32f8636ecb746bc304b99d0b6976ba/GalleryBamba1.jpeg",
-      "https://images.ctfassets.net/ht2d038ql6u5/7zNZexp2pqo09OWTiZIzQy/d8298c9ff37654f31b6066ed43768e3e/GalleryBoma2.jpg",
-      "https://images.ctfassets.net/ht2d038ql6u5/3lEmvkSlNIMRk9LDOz8tv0/54e9fd8688259a8ff0b26be57ae9511e/GalleryBoma1.jpg",
-      "https://images.ctfassets.net/ht2d038ql6u5/5KLderVcpTvJ98GIcEwaCY/cc7e11b8e02049013598d9fe4be36d02/GalleryBoma5.jpg",
-      "https://images.ctfassets.net/ht2d038ql6u5/7I9Sq0yCFW3KFDhKRdV9h8/2108c481916ebc8ce50687f0d420cf45/GalleryBoma3.JPG",
-      "https://images.ctfassets.net/ht2d038ql6u5/2H1T1D0Zch5X5RkgPuJOId/a24b1a9cd36f6825dcf85688747b2161/GalleryBoma4.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/1Uh9I8IyuBvOBZZBR24ysN/68af06a422da51b4d72a8299b04fa2c9/GalleryChobe1.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/2ioeCBPvRREtg35tiiuUNz/e20e350dbd9d6da10f977b236280c5d2/GalleryChobe2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/5oZTS8sy0VQLuGaUUwqnyz/8b8feea029454c91bbd52ed624656b27/GalleryChobe3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/4DBrfqzgKyApT3xDh7Ji2S/686d3b1ee5bd123cf2fb127ea0d6a655/GalleryChobe4.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/51efd15RAhzyVXAeJAyzDG/4e22718fb7a94df3559d0a92d4b565c1/GalleryChobe5.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/6traOj8NplCbmK7lC8QvzG/7254dcc96050ba6e142c529307ae7252/GalleryChobe6.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/67mo1KImdkd76dQhQTYNv9/6afb6946a220a739acd1d8a543d85143/GalleryChobe7.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5jcH0zCY0V6ch7UPGwSkIx/34248d0a186e1e0f0df50896352ac085/GalleryChobe8.webp",
     ],
-    priceFrom: 200,
+
+    priceFrom: 220,
+
     duration: "Full Day",
-    location: "Victoria Falls",
-    category: "Package",
-    type: "package",
+
+    location: "Chobe National Park, Botswana",
+
+    category: "Day Tour",
+
+    type: "day",
+
     summary:
-      "Experience the charm of the Bamba Tram, discover the breathtaking Victoria Falls on a guided tour, and end your day with the famous Boma Dinner and Drum Show for an unforgettable cultural evening.",
+      "Enjoy a full-day safari adventure to Chobe National Park, one of Botswana's premier wildlife destinations. Combine a game drive and a relaxing river safari with excellent chances of spotting elephants, buffalo, hippos, crocodiles, and a wide variety of birdlife.",
 
     highlights: [
-      "Scenic Bamba Tram experience",
-      "Guided Victoria Falls tour",
-      "The Boma Dinner & Drum Show",
+      "Full-day safari experience in Chobe National Park",
+      "Game drive with expert local guides",
+      "Boat cruise on the Chobe River",
+      "Excellent elephant and wildlife viewing",
+      "Scenic cross-border day trip from Victoria Falls",
     ],
 
     includes: [
-      "Bamba Tram ride",
-      "Guided Victoria Falls tour",
-      "The Boma Dinner and Drum Show",
-      "Return hotel transfers",
-      "Professional guide",
+      "Return transfers",
+      "Chobe National Park game drive",
+      "Chobe River boat cruise",
+      "Park entry fees",
+      "Professional safari guide",
     ],
 
     itinerary: [
-      "Morning: Pick-up from your accommodation and enjoy a scenic ride on the Bamba Tram.",
-      "Late Morning: Explore the magnificent Victoria Falls on a guided tour, visiting the best viewpoints and learning about its history and geology.",
-      "Evening: Transfer to The Boma Restaurant for a traditional African dinner, drumming, cultural performances, and entertainment before returning to your accommodation.",
+      "Early morning pick-up from your accommodation in Victoria Falls and transfer to the Botswana border.",
+      "Cross into Botswana and continue to Chobe National Park for a guided game drive.",
+      "Enjoy a buffet lunch at a selected lodge or restaurant, depending on the day plan.",
+      "Board a boat cruise on the Chobe River to watch wildlife from the water and enjoy the scenery.",
+      "Return to Victoria Falls in the afternoon or early evening after your safari day.",
     ],
   },
   {
@@ -1195,6 +1147,54 @@ export const packages = [
       "Midday: Take to the skies on the iconic Helicopter Flight over Victoria Falls for breathtaking panoramic views.",
       "Late Afternoon: Board a luxury sunset cruise on the Zambezi River with complimentary snacks and drinks while watching wildlife and the African sunset.",
       "Evening: Return transfer to your accommodation.",
+    ],
+  },
+  {
+    id: "",
+    slug: "am-bamba-tram-falls-tour-boma",
+    destinationIds: ["victoria-falls"],
+    title: "AM Bamba Tram, Falls Tour and Boma",
+    image:
+      "https://images.ctfassets.net/ht2d038ql6u5/5k8EVYL2BBOaQLZZiqK7Cz/0927d20ffb8cd11b4edd3a6a2cb29d79/BambaHero.png",
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/6pNIj3SZtQ3ab5aoOlhkKT/ae5d26bd5be68494fd10e407b98a2b57/GalleryBamba6.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/50Dk5FaLg8CHJHQYAsw2Hb/0b20340736d832e2b7b5064c4e6e859b/GalleryBamba5.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/4R430wgKY1QVAbKdO1B6kh/bb34f586e957385fd85d3b1ab948ca72/GalleryBamba4.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/67YrgtdCYNFlEPufab8v91/e488ea0e37996391a9a1556a8ff52d31/GalleryBamba3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/2uVJvgv4k3DrKW1ojgpf71/4355c847aca2e05819caea84da1f6b3f/GalleryBamba2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/6UZGu3Gy5qcmV8QqgwVKM3/1a32f8636ecb746bc304b99d0b6976ba/GalleryBamba1.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7zNZexp2pqo09OWTiZIzQy/d8298c9ff37654f31b6066ed43768e3e/GalleryBoma2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/3lEmvkSlNIMRk9LDOz8tv0/54e9fd8688259a8ff0b26be57ae9511e/GalleryBoma1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5KLderVcpTvJ98GIcEwaCY/cc7e11b8e02049013598d9fe4be36d02/GalleryBoma5.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/7I9Sq0yCFW3KFDhKRdV9h8/2108c481916ebc8ce50687f0d420cf45/GalleryBoma3.JPG",
+      "https://images.ctfassets.net/ht2d038ql6u5/2H1T1D0Zch5X5RkgPuJOId/a24b1a9cd36f6825dcf85688747b2161/GalleryBoma4.jpg",
+    ],
+    priceFrom: 200,
+    duration: "Full Day",
+    location: "Victoria Falls",
+    category: "Package",
+    type: "package",
+    summary:
+      "Experience the charm of the Bamba Tram, discover the breathtaking Victoria Falls on a guided tour, and end your day with the famous Boma Dinner and Drum Show for an unforgettable cultural evening.",
+
+    highlights: [
+      "Scenic Bamba Tram experience",
+      "Guided Victoria Falls tour",
+      "The Boma Dinner & Drum Show",
+    ],
+
+    includes: [
+      "Bamba Tram ride",
+      "Guided Victoria Falls tour",
+      "The Boma Dinner and Drum Show",
+      "Return hotel transfers",
+      "Professional guide",
+    ],
+
+    itinerary: [
+      "Morning: Pick-up from your accommodation and enjoy a scenic ride on the Bamba Tram.",
+      "Late Morning: Explore the magnificent Victoria Falls on a guided tour, visiting the best viewpoints and learning about its history and geology.",
+      "Evening: Transfer to The Boma Restaurant for a traditional African dinner, drumming, cultural performances, and entertainment before returning to your accommodation.",
     ],
   },
 ];
