@@ -555,6 +555,182 @@ export const dayTours = [
       "Return by mokoro before transferring back in the late afternoon with unforgettable memories of the Okavango Delta.",
     ],
   },
+  {
+    id: "nata-bird-sanctuary-day-trip",
+    slug: "nata-bird-sanctuary-day-trip",
+
+    destinationIds: ["nata-bird-sanctuary"],
+
+    title: "Nata Bird Sanctuary Day Trip",
+
+    image:
+      "https://images.ctfassets.net/ht2d038ql6u5/mVq4dzlOVvaTbQ28WeJXm/7e6ad020090bec01ce4f98837dbeb80d/NataHero.png",
+
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/1ejkk0xhW12LA1SMNWoZZC/fb79dd3c73da1b6b5a6162c047b6b6d9/GalleryNata1.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/5SbP95VNIkTx0qbgFYIlC5/64120fece6d251b2ebf5149280382cd6/GalleryNata2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/38ZMvsjEkqHn8CHrtEK7tj/3d49d6dfcc7f0f2885762361a0c35014/GalleryNata3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/4vwt5dXsftVdTYIniGnQU1/ac3a7d260805188efe46bff488b0582a/GalleryNata4.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/9YVhoeG0qi0bM7hOwmTzu/5bcc7d4e40ada1ca1adaf05ff3a498e0/GalleryNata5.png",
+    ],
+
+    priceFrom: 140,
+
+    duration: "Full Day",
+
+    location: "Nata Bird Sanctuary, Botswana",
+
+    category: "Day Tour",
+
+    type: "day",
+
+    summary:
+      "Escape into Botswana's spectacular wetlands on a full-day visit to Nata Bird Sanctuary. Discover one of Southern Africa's finest birdwatching destinations, enjoy breathtaking views of Sua Pan, and experience the tranquility of this unique natural ecosystem.",
+
+    highlights: [
+      "Explore the renowned Nata Bird Sanctuary and its scenic wetlands",
+      "Observe flamingos, pelicans, storks, herons, and hundreds of other bird species",
+      "Visit the panoramic viewpoint overlooking the magnificent Sua Pan",
+      "Enjoy exceptional birdwatching and wildlife photography opportunities",
+      "Learn about the sanctuary's unique ecosystem and conservation efforts",
+      "Experience one of Botswana's premier eco-tourism destinations",
+    ],
+
+    includes: [
+      "Professional local guide",
+      "Comfortable air-conditioned transport",
+      "Sanctuary entrance fees",
+      "Guided birdwatching experience",
+      "Bottled drinking water",
+      "Tour coordination and assistance",
+    ],
+
+    itinerary: [
+      "Depart in the morning for Nata Bird Sanctuary and enjoy a scenic drive through Botswana's countryside.",
+      "Explore the sanctuary with your guide while spotting a wide variety of resident and migratory bird species.",
+      "Visit the famous Sua Pan viewpoint to admire the expansive salt pans and surrounding wetlands.",
+      "Spend time photographing wildlife, landscapes, and seasonal flamingo gatherings before enjoying a relaxing break.",
+      "Return in the late afternoon after an unforgettable day immersed in Botswana's rich birdlife and natural beauty.",
+    ],
+  },
+  {
+    id: "bamba-tram-experience",
+    slug: "bamba-tram-experience",
+
+    destinationIds: ["victoria-falls"],
+
+    title: "Bamba Tram Experience",
+
+    image:
+      "https://images.ctfassets.net/ht2d038ql6u5/6feCAWHsW5p2ikLYBxDvfO/a647a7f08ca35198cfa2aeecd8745e28/GalleryBamba1.jpeg",
+
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/6feCAWHsW5p2ikLYBxDvfO/a647a7f08ca35198cfa2aeecd8745e28/GalleryBamba1.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/68Nx60wCReL7EGRuoKxCSs/03772d975307bf62ad1dce1c246b7ab1/GalleryBamba2.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/6PvHdryE2mjULK41WRz8wj/5ea4643e0667c84aeb027442a7bf8461/GalleryBamba3.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/7HQK9BtMEqA7yy9OD2FEbr/f0ddb884a324860df9e356955f996cec/GalleryBamba5.jpeg",
+      "https://images.ctfassets.net/ht2d038ql6u5/2tBdVSBs6Ak8WrQsPLg9Tz/384c47656e347215da655350cdb21a52/GalleryBamba6.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/2a7tSHauTp6NYp9DJ4AlGj/66c84e93a9822deb762058ee3542d8d4/GalleryBamba7.png",
+    ],
+
+    priceFrom: 75,
+
+    duration: "1.5 Hours",
+
+    location: "Victoria Falls, Zimbabwe",
+
+    category: "Experience",
+
+    type: "experience",
+
+    summary:
+      "Step aboard the iconic Bamba Tram for one of Victoria Falls' most memorable experiences. Travel through the bush, across the historic Victoria Falls Bridge, and enjoy breathtaking views of the Batoka Gorge and Zambezi River while learning the fascinating history of the railway and the bridge. This unique heritage journey combines spectacular scenery, wildlife sightings, and unforgettable photo opportunities.",
+
+    highlights: [
+      "Ride the authentic Bamba Tram through Victoria Falls National Park",
+      "Cross the historic Victoria Falls Bridge with panoramic views of the Batoka Gorge",
+      "Enjoy spectacular sunrise or morning scenery over the Zambezi River",
+      "Learn the history of the Victoria Falls Bridge and railway",
+      "Spot wildlife along the railway through the national park",
+      "Tea, coffee, and light refreshments served on the bridge",
+      "Excellent photography opportunities throughout the journey",
+    ],
+
+    includes: [
+      "Bamba Tram ticket",
+      "Professional local guide",
+      "Rail, bridge, and conservation fees",
+      "Tea, coffee, and light refreshments",
+      "Guided stop on the Victoria Falls Bridge",
+      "Hotel pickup and drop-off (where applicable)",
+    ],
+
+    itinerary: [
+      "Pickup from your hotel and transfer to the Bamba Tram departure point.",
+      "Board the vintage-style tram and journey through Victoria Falls National Park toward the iconic Victoria Falls Bridge.",
+      "Stop on the bridge to admire breathtaking views of the Batoka Gorge, Zambezi River, and Victoria Falls while enjoying refreshments.",
+      "Learn about the engineering, history, and heritage of the bridge and railway from your guide.",
+      "Return aboard the tram before being transferred back to your accommodation.",
+    ],
+  },
+  {
+    id: "victoria-falls-game-drive",
+    slug: "victoria-falls-game-drive",
+
+    destinationIds: ["victoria-falls"],
+
+    title: "Victoria Falls Game Drive",
+
+    image: "https://images.ctfassets.net/ht2d038ql6u5/PG8qDFMXIfBLPzdqEr1HN/baa5200ba07575fc199b95e576a43388/GameDriveHero.jpg",
+
+    gallery: [
+      "https://images.ctfassets.net/ht2d038ql6u5/erf0hJzd3QmS9Uz7vJ0ZW/ba018ee4bfec1ce328b0fbcc6596b1b3/GalleryGameDrive1.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/6hQWCJbGkEcnrrjv2q3Yvf/9d5dfb48b185d217cd18d55cad028552/GalleryGameDrive2.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/4oxCR5vE63effOlkcI26YQ/ce17b5a825fb281e49aff16ce3251b00/GalleryGameDrive3.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/5zQa14dIJqkv9xRWRm4Pc0/f7423b363ee29f865752eee76419d950/GalleryGameDrive4.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/4X0doZNxMbtrNKrpiUfO4s/7612c1d42b57fb98ec998f28ef1b5479/GalleryGameDrive5.jpg",
+      "https://images.ctfassets.net/ht2d038ql6u5/1Elb5447YHp0TrwbNRS1Zr/7353e77051bf669b853ec99f4d7897fb/GalleryGameDrive6.jpg",
+    ],
+
+    priceFrom: 85,
+
+    duration: "3 Hours",
+
+    location: "Victoria Falls, Zimbabwe",
+
+    category: "Wildlife Safari",
+
+    type: "experience",
+
+    summary:
+      "Experience an exciting guided game drive through the Zambezi National Park, home to an incredible diversity of African wildlife. Journey in an open safari vehicle with an experienced guide as you search for elephants, buffalo, giraffes, zebras, antelope, and an abundance of birdlife while enjoying the breathtaking landscapes surrounding Victoria Falls.",
+
+    highlights: [
+      "Explore Zambezi National Park in an open safari vehicle",
+      "Spot elephants, buffalo, giraffes, zebras, impalas, and other wildlife",
+      "Possibility of seeing lions, leopards, and other predators",
+      "Enjoy spectacular views of the Zambezi River and surrounding wilderness",
+      "Learn about the park's wildlife, ecology, and conservation from a professional guide",
+      "Excellent opportunities for wildlife photography",
+    ],
+
+    includes: [
+      "Professional safari guide",
+      "Open 4x4 game-viewing vehicle",
+      "National park entry fees",
+      "Bottled drinking water",
+      "Hotel pickup and drop-off",
+      "Tour coordination and assistance",
+    ],
+
+    itinerary: [
+      "Pickup from your hotel and transfer to Zambezi National Park.",
+      "Begin your guided game drive in an open safari vehicle, exploring different habitats in search of wildlife.",
+      "Stop at scenic viewpoints overlooking the Zambezi River while your guide shares fascinating insights about the park and its animals.",
+      "Continue your safari through the park with opportunities to photograph wildlife and enjoy the African bush.",
+      "Return to your hotel after an unforgettable wildlife experience near Victoria Falls.",
+    ],
+  },
 ];
 
 export const multiDayTours = [
