@@ -624,7 +624,8 @@ export const dayTours = [
 
     title: "Victoria Falls Game Drive",
 
-    image: "https://images.ctfassets.net/ht2d038ql6u5/PG8qDFMXIfBLPzdqEr1HN/baa5200ba07575fc199b95e576a43388/GameDriveHero.jpg",
+    image:
+      "https://images.ctfassets.net/ht2d038ql6u5/PG8qDFMXIfBLPzdqEr1HN/baa5200ba07575fc199b95e576a43388/GameDriveHero.jpg",
 
     gallery: [
       "https://images.ctfassets.net/ht2d038ql6u5/erf0hJzd3QmS9Uz7vJ0ZW/ba018ee4bfec1ce328b0fbcc6596b1b3/GalleryGameDrive1.jpg",
@@ -792,7 +793,7 @@ export const multiDayTours = [
       "Conclude your journey with unforgettable memories of Zimbabwe's wildlife, history, and hospitality.",
     ],
   },
-  
+
   {
     id: "hwange-victoria-falls-chobe-okavango",
     slug: "hwange-national-park-victoria-falls-chobe-okavango-delta",
@@ -1013,9 +1014,9 @@ export const packages = [
 
     location: "Chobe National Park, Botswana",
 
-    category: "Day Tour",
-
-    type: "day",
+    category: "Package",
+    
+    type: "package",
 
     summary:
       "Enjoy a full-day safari adventure to Chobe National Park, one of Botswana's premier wildlife destinations. Combine a game drive and a relaxing river safari with excellent chances of spotting elephants, buffalo, hippos, crocodiles, and a wide variety of birdlife.",

@@ -91,12 +91,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.zazuadventures.com/tours/chobe-day-trip</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.zazuadventures.com/tours/flight-of-angels</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
@@ -115,13 +109,43 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.zazuadventures.com/tours/cape-town-day-tour</loc>
+    <loc>https://www.zazuadventures.com/tours/cape-town-day-trip</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.zazuadventures.com/tours/kruger-national-park-day-tour</loc>
+    <loc>https://www.zazuadventures.com/tours/kruger-national-park-day-trip</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zazuadventures.com/tours/hwange-national-park-day-trip</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zazuadventures.com/tours/okavango-delta-day-trip</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zazuadventures.com/tours/nata-bird-sanctuary-day-trip</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zazuadventures.com/tours/bamba-tram-experience</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zazuadventures.com/tours/victoria-falls-game-drive</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -139,7 +163,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.zazuadventures.com/tours/cape-town-kruger-vic-falls-chobe</loc>
+    <loc>https://www.zazuadventures.com/tours/hwange-national-park-victoria-falls-chobe-okavango-delta</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -151,7 +175,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.zazuadventures.com/tours/hwange-national-park-victoria-falls-chobe-okavango-delta</loc>
+    <loc>https://www.zazuadventures.com/tours/cape-town-kruger-vic-falls-chobe</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -163,7 +187,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.zazuadventures.com/tours/am-bamba-tram-falls-tour-boma</loc>
+    <loc>https://www.zazuadventures.com/tours/chobe-day-trip</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -176,6 +200,12 @@
   </url>
   <url>
     <loc>https://www.zazuadventures.com/tours/lion-elephant-walk-helicopter-sunset-cruise</loc>
+    <lastmod>2026-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.zazuadventures.com/tours/am-bamba-tram-falls-tour-boma</loc>
     <lastmod>2026-07-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
