@@ -11,7 +11,7 @@ function Footer() {
     },
     {
       label: "Instagram",
-      href: "https://instagram.com",
+      href: "https://www.instagram.com/zazu.8969?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
       icon: FaInstagram,
     },
     {

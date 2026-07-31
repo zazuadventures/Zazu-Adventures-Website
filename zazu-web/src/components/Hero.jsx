@@ -7,7 +7,7 @@ import { getHeroSlides } from "../services/heroSlides";
 const FALLBACK_SLIDES = [
   {
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/VictoriaFallsGallery1.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/3r26FxsCBjhDY4C5Z9HOAM/f6a3d6d3d3adffc46ecb14864bf7ff93/VictoriaFallsHero.png",
     eyebrow: "The Smoke That Thunders",
     title: "Victoria Falls",
     description:
@@ -19,7 +19,7 @@ const FALLBACK_SLIDES = [
   },
   {
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/HwangeGallery1.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/eMdcuJW5MemcDYgugNzlg/93a1ed95234623df93f038eac9318b0f/HwangeHero.png",
     eyebrow: "Zimbabwe's Premier Safari Destination",
     title: "Hwange National Park",
     description:
@@ -30,7 +30,7 @@ const FALLBACK_SLIDES = [
     },
   },
   {
-    image: "https://zazuadventures.com/wp-content/uploads/2026/07/ChobeGallery5.png",
+    image: "https://images.ctfassets.net/ht2d038ql6u5/6eE5F2BkGAbhfVzq1qUsOI/389884b398f2eaae08d5a6ffe735718c/ChobeHero.png",
     eyebrow: "Land of Giants",
     title: "Chobe National Park",
     description:
@@ -42,7 +42,7 @@ const FALLBACK_SLIDES = [
   },
   {
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/OkavangoGallery1.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/1tAxUYLuP0SZ3Lqv8fWFpl/a03a5a40eb3104cce9af968d749822f5/OkavangoHero.png",
     eyebrow: "Africa's Untamed Oasis",
     title: "Okavango Delta",
     description:
@@ -54,7 +54,7 @@ const FALLBACK_SLIDES = [
   },
   {
     image:
-      "https://zazuadventures.com/wp-content/uploads/2026/07/SossusvleiGallery1.png",
+      "https://images.ctfassets.net/ht2d038ql6u5/53vS6zl07B4Z68L4UVnAjU/1ba8a548c7becc4fac098ad8371ee3f5/SossusvleiHero.png",
     eyebrow: "The Iconic Red Dunes",
     title: "Sossusvlei Desert",
     description:

@@ -1,6 +1,16 @@
 import { useMemo, useState } from "react";
 import ActivityCard from "./ActivityCard";
 
+function normalizeTourType(value = "") {
+  const normalized = value.toString().trim().toLowerCase();
+
+  if (normalized === "day-tour") {
+    return "day";
+  }
+
+  return normalized;
+}
+
 function TourCatalog({ items = [], showSections = false }) {
   const [activeFilter, setActiveFilter] = useState("all");
 
@@ -26,7 +36,7 @@ function TourCatalog({ items = [], showSections = false }) {
   const filteredItems = useMemo(() => {
     if (activeFilter === "all") return items;
 
-    return items.filter((item) => item.type === activeFilter);
+    return items.filter((item) => normalizeTourType(item.type) === activeFilter);
   }, [activeFilter, items]);
 
   const sections = useMemo(() => {
@@ -45,7 +55,7 @@ function TourCatalog({ items = [], showSections = false }) {
       },
     ].map((section) => ({
       ...section,
-      items: items.filter((item) => item.type === section.key),
+      items: items.filter((item) => normalizeTourType(item.type) === section.key),
     }));
   }, [items]);
 

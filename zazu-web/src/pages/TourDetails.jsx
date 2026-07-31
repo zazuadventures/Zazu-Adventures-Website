@@ -190,7 +190,6 @@ function TourDetails() {
               <div className="mt-8 grid gap-6 md:grid-cols-1">
                 {tour.highlights?.map((highlight, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 size={20} className="mt-1 text-[#8A6A3D]" />
                     <p className="text-[#444444]">{highlight}</p>
                   </div>
                 ))}
@@ -205,7 +204,6 @@ function TourDetails() {
               <div className="mt-8 grid gap-6 md:grid-cols-1">
                 {tour.includes?.map((item, index) => (
                   <div key={index} className="flex items-start gap-3">
-                    <CheckCircle2 size={20} className="mt-1 text-[#8A6A3D]" />
                     <p className="text-[#444444]">{item}</p>
                   </div>
                 ))}
@@ -228,10 +226,6 @@ function TourDetails() {
                         className="rounded-3xl border border-[#203A4A]/10 bg-white p-6 shadow-sm"
                       >
                         <div className="flex items-start gap-3">
-                          <CheckCircle2
-                            size={20}
-                            className="mt-1 text-[#8A6A3D]"
-                          />
                           <div>
                             <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-[#203A4A]">
                               {itineraryItem.label}
